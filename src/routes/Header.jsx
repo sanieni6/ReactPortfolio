@@ -1,9 +1,19 @@
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+import { toggleMode } from '../redux/slices/modeSlice';
 
 const Header = () => {
+    const { darkMode } = useSelector((store) => store.mode);
+    const dispatch = useDispatch();
+
+    const handleClick = () => {
+        dispatch(toggleMode());
+    };
+    console.log('Mode:', darkMode); 
     return (
         <header>
-            <h1>Luis Sanchez</h1>
+            <h1 className={`${darkMode === 'dark' ? 'text-darkMain':'text-lightMain' }`}>Luis Sanchez</h1>
             <nav>
                 <ul>
                     <li>
@@ -13,7 +23,7 @@ const Header = () => {
                         <NavLink to="/About">About</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/Portfolio">Portfolio</NavLink>
+                        <NavLink to="/Portfolio" className={`${darkMode === 'dark' ? 'text-darkMain':'text-lightMain' }`}>Portfolio</NavLink>
                     </li>
                     <li>
                         <NavLink to="/Services">Services</NavLink>
@@ -23,6 +33,11 @@ const Header = () => {
                     </li>
                     <li>
                         <NavLink to="/Contact">Contact</NavLink>
+                    </li>
+                    <li>
+                        <button onClick={handleClick} className={`${darkMode === 'dark' ? 'text-darkMain':'text-lightMain' }`}>
+                            {darkMode === 'light' ? 'dark' : 'light'}
+                        </button>
                     </li>
                 </ul>
 
