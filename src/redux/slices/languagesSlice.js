@@ -7,14 +7,12 @@ const languagesSlice = createSlice({
     name: "languages",
     initialState: {
         language: "en",
-        languages: {
-            en: en,
-            es: es,
-        },
+        currentLanguage: en,
     },
     reducers: {
         toggleLanguage: (state) => {
             state.language = state.language === "en" ? "es" : "en";
+            state.currentLanguage = state.language === "en" ? en : es;
         }   
     }
 });

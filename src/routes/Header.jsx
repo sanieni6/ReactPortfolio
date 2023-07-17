@@ -1,29 +1,35 @@
-import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { toggleMode } from '../redux/slices/modeSlice';
+import { toggleLanguage } from '../redux/slices/languagesSlice';
 
 const Header = () => {
     const { darkMode } = useSelector((store) => store.mode);
+    const { language, currentLanguage } = useSelector((store) => store.languages);
     const dispatch = useDispatch();
 
     const handleClick = () => {
         dispatch(toggleMode());
     };
+
+    const handleLanguage = () => {
+        dispatch(toggleLanguage());
+    };
+    
     console.log('Mode:', darkMode); 
     return (
         <header>
-            <h1 className={`${darkMode === 'dark' ? 'text-darkMain':'text-lightMain' }`}>Luis Sanchez</h1>
+            <h1 className={`${darkMode? 'text-lightMain':'text-darkMain'}`}>Luis Sanchez</h1>
             <nav>
                 <ul>
                     <li>
-                        <NavLink to="/">Home</NavLink>
+                        <NavLink to="/">{currentLanguage.header.home}</NavLink>
                     </li>
                     <li>
                         <NavLink to="/About">About</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/Portfolio" className={`${darkMode === 'dark' ? 'text-darkMain':'text-lightMain' }`}>Portfolio</NavLink>
+                        <NavLink to="/Portfolio" className={`${darkMode? 'text-lightMain':'text-darkMain'}`}>Portfolio</NavLink>
                     </li>
                     <li>
                         <NavLink to="/Services">Services</NavLink>
@@ -35,8 +41,13 @@ const Header = () => {
                         <NavLink to="/Contact">Contact</NavLink>
                     </li>
                     <li>
-                        <button onClick={handleClick} className={`${darkMode === 'dark' ? 'text-darkMain':'text-lightMain' }`}>
-                            {darkMode === 'light' ? 'dark' : 'light'}
+                        <button onClick={handleClick} className={`${darkMode? 'text-lightMain':'text-darkMain'}`}>
+                            {darkMode? 'dark' : 'light'}
+                        </button>
+                    </li>
+                    <li>
+                        <button onClick={handleLanguage}>
+                            {language === 'en' ? 'es' : 'en'}
                         </button>
                     </li>
                 </ul>
