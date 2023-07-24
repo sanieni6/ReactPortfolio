@@ -2,6 +2,11 @@
     "header":{
         "home":"Inicio",
         "about":"Acerca de",
-        "contact":"Contacto"
+        "contact":"Contacto",
+        "portfolio":"Portafolio",
+        "services":"Servicios",
+        "blog":"Blog",
+        "dark":"Oscuro",
+        "light":"Claro"
     }
 }

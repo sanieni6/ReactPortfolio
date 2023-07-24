@@ -18,35 +18,35 @@ const Header = () => {
     
     console.log('Mode:', darkMode); 
     return (
-        <header className='flex flex-row justify-between w-full'>
-            <h1 className={`${darkMode? 'text-lightMain':'text-darkMain'}`}>Luis Sanchez</h1>
+        <header className={`flex flex-row justify-between w-full ${darkMode? 'bg-lightMain':'bg-darkMain'} p-5`} >
+            <h1 className={`${darkMode? 'text-lightText':'text-darkText'}`}>&lt; Luis Sanchez /&gt;</h1>
             <nav className='flex'>
                 <ul className='flex flex-row gap-4'>
                     <li>
-                        <NavLink to="/">{currentLanguage.header.home}</NavLink>
+                        <NavLink to="/" className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.header.home}</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/About">About</NavLink>
+                        <NavLink to="/About" className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.header.about}</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/Portfolio" className={`${darkMode? 'text-lightMain':'text-darkMain'}`}>Portfolio</NavLink>
+                        <NavLink to="/Portfolio" className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.header.portfolio}</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/Services">Services</NavLink>
+                        <NavLink to="/Services" className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.header.services}</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/Blog">Blog</NavLink>
+                        <NavLink to="/Blog" className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.header.blog}</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/Contact">Contact</NavLink>
+                        <NavLink to="/Contact" className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.header.contact}</NavLink>
                     </li>
                     <li>
-                        <button onClick={handleClick} className={`${darkMode? 'text-lightMain':'text-darkMain'}`}>
-                            {darkMode? 'dark' : 'light'}
+                        <button onClick={handleClick} className={`${darkMode? 'text-lightText':'text-darkText'}`}>
+                            {darkMode? currentLanguage.header.dark : currentLanguage.header.light}
                         </button>
                     </li>
                     <li>
-                        <button onClick={handleLanguage}>
+                        <button onClick={handleLanguage} className={`${darkMode? 'text-lightText':'text-darkText'}`}>
                             {language === 'en' ? 'es' : 'en'}
                         </button>
                     </li>
