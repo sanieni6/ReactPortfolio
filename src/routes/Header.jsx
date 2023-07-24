@@ -18,10 +18,10 @@ const Header = () => {
     
     console.log('Mode:', darkMode); 
     return (
-        <header>
+        <header className='flex flex-row justify-between w-full'>
             <h1 className={`${darkMode? 'text-lightMain':'text-darkMain'}`}>Luis Sanchez</h1>
-            <nav>
-                <ul>
+            <nav className='flex'>
+                <ul className='flex flex-row gap-4'>
                     <li>
                         <NavLink to="/">{currentLanguage.header.home}</NavLink>
                     </li>
