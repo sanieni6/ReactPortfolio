@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import { useSelector, useDispatch,} from 'react-redux';
 import { toggleMode } from '../redux/slices/modeSlice';
 import { toggleLanguage } from '../redux/slices/languagesSlice';
 
@@ -15,8 +16,13 @@ const Header = () => {
     const handleLanguage = () => {
         dispatch(toggleLanguage());
     };
+
+    useEffect(() => {
+            document.body.style.backgroundColor = darkMode? '#dedede':'#000';
+    }, [darkMode]);
+
+
     
-    console.log('Mode:', darkMode); 
     return (
         <header className={`flex flex-row justify-between w-full ${darkMode? 'bg-lightMain':'bg-darkMain'} p-5`} >
             <h1 className={`${darkMode? 'text-lightText':'text-darkText'}`}>&lt; Luis Sanchez /&gt;</h1>

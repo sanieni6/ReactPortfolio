@@ -8,5 +8,11 @@
         "blog":"Blog",
         "dark":"Oscuro",
         "light":"Claro"
+    },
+    "home":{
+        "firstSub":"Bienvenido a mi mundo",
+        "mainTitle":"Hola, Soy Luis Sanchez un desarrollador full stack",
+        "secondSub":"Yo puedo ayudarte a contruir tu proyecto , funcionalidad o sitio web. Mira a traves de algunos de mis trabajos y experiencia! Si te gusta lo que ves y tienes un proyecto similar, no dudes en contactarme!",
+        "followMe": "Sigueme en"
     }
 }

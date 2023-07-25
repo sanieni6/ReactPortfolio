@@ -1,19 +1,33 @@
+import { useSelector } from 'react-redux';
+import facebook from '../images/icons8-facebook.svg';
+import github from '../images/icons8-github.svg';
+import linkedin from '../images/icons8-linkedin.svg';
+import medium from '../images/medium.svg';
 const Home = () => {
+    const { darkMode } = useSelector((store) => store.mode);
+    const { currentLanguage } = useSelector((store) => store.languages);
+
+    const socialMedia = () => (
+        <div>
+            <img src={facebook} className= {`${darkMode? '':'invert-colors'} w-7 h-7`} alt="facebook"/>
+            <img src={github} className= {`${darkMode? '':'invert-colors'} w-7 h-7`} alt="github"/>
+            <img src={linkedin} className= {`${darkMode? '':'invert-colors'} w-7 h-7`} alt="linkedin"/>
+            <img src={medium} className= {`${darkMode? '':'invert-colors'} w-7 h-7`} alt="medium"/>
+        </div>
+    );
+
+    
     return (
         <div >
             <div>
             <div>
-                <p>Welcome to my World</p>
-                <h1>Hi, I`m Luis Sánchez a Full Stack Web Developer</h1>
-                <p>I can help you build your project , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don`t hesitate to contact me.</p>
+                <p className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.home.firstSub}</p>
+                <h1 className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.home.mainTitle}</h1>
+                <p className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.home.secondSub}</p>
             </div>
             <div>
-                <p>Follow me on:</p>
-                <div>
-                    <p>f</p>
-                    <p>l</p>
-                    <p>g</p>
-                </div>
+                <p className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.home.followMe}</p>
+                {socialMedia()}
             </div>
             </div>
             

@@ -9,4 +9,8 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
+.invert-colors {
+  filter: invert(1); /* Invierte los colores de la imagen */
+}
+
 
