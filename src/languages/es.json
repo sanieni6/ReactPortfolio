@@ -61,5 +61,21 @@
     "footer": {
         "designed": "Diseñado y desarrollado por Luis Sanchez",
         "rights": "© 2023 Luis Sanchez. Todos los derechos reservados."
+    },
+    "about": {
+        "whoAmI": {
+            "title": "Conoce quien soy",
+            "second": "Hola, Soy Luis Sanchez un desarrollador full stack e ingeniero en telematica",
+            "third" : "Soy una persona apasionada por la tecnologia y amo aprender cosas nuevas, me gusta trabajar en equipo y siempre estoy buscando nuevas formas de mejorar mis habilidades.",
+            "fouth":"Como autodidacta, me gusta aprender por mi cuenta y siempre estoy en busqueda de nuevos retos",
+            "fifth":"Me gusta trabajar en equipo y siempre estoy buscando nuevas formas de mejorar mis habilidades",
+            "sixth":"Aparte de la programacion, otras actividades que me amo hacer son:",
+            "hobbie1":"📚 Leer",
+            "hobbie2":"Calistenia",
+            "hobbie3":"Ciencia de datos",
+            "hobbie4":"Peliculas y series",
+            "quote":"“Encuentra lo que amas, y deja que te destruya”",
+            "author":"Charles Bukowski"
+        }
     }
 }

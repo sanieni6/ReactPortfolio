@@ -61,5 +61,21 @@
         "footer": {
             "designed": "Designed and Developed by Luis Sanchez",
             "rights": "© 2023 Luis Sanchez. All rights reserved."
+        },
+        "about": {
+            "whoAmI": {
+                "title": "Know Who I`m",
+                "second": "Hi, I`m Luis Sanchez, a full stack web developer and telematics engineer.",
+                "third" : "I`m a passionate about technology and I love to learn new things.",
+                "fouth":"I`m a self-taught person, I like to learn by myself and I`m always looking for new challenges.",
+                "fifth":"I`m a person who likes to work in a team and I`m always looking for new ways to improve my skills.",
+                "sixth":"Apart from coding, some other activities that I love to do!",
+                "hobbie1":"📚 Reading",
+                "hobbie2":"Calistenics",
+                "hobbie3":"Data Science",
+                "hobbie4":"Movies",
+                "quote":"“Find what you love and let it kill you”",
+                "author":"Charles Bukowski"
+            }
         }
     }

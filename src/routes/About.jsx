@@ -1,25 +1,31 @@
+import { useSelector } from 'react-redux';
+
 const About = () => {
+
+    const { darkMode } = useSelector((store) => store.mode);
+    const { currentLanguage } = useSelector((store) => store.languages);
+
     return (
         <div>
             <div>
                 {/* who am i? */}
                 <div>
-                    <h2>Know Who I`m</h2>
-                    <p>Hi, I`m Luis Sanchez, a full stack web developer and telematics engineer.</p>
-                    <p>I`m a passionate about technology and I love to learn new things.</p>
-                    <p>I`m a self-taught person, I like to learn by myself and I`m always looking for new challenges.</p>
-                    <p>I`m a person who likes to work in a team and I`m always looking for new ways to improve my skills.</p>
-                    <p>Apart from coding, some other activities that I love to do!</p>
+                    <h2 className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.about.whoAmI.title}</h2>
+                    <p className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.about.whoAmI.second}</p>
+                    <p className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.about.whoAmI.third}</p>
+                    <p className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.about.whoAmI.fouth}</p>
+                    <p className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.about.whoAmI.fifth}</p>
+                    <p className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.about.whoAmI.sixth}</p>
                     <div>
-                        <p>📚 Reading</p>
-                        <p> Calistenics</p>
-                        <p> Data Science</p>
-                        <p> Movies </p>
+                        <p className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.about.whoAmI.hobbie1}</p>
+                        <p className={`${darkMode? 'text-lightText':'text-darkText'}`}> {currentLanguage.about.whoAmI.hobbie2}</p>
+                        <p className={`${darkMode? 'text-lightText':'text-darkText'}`}> {currentLanguage.about.whoAmI.hobbie3}</p>
+                        <p className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.about.whoAmI.hobbie4} </p>
                     </div>
                     {/* quote */}
                     <div>
-                        <p>“Find what you love and let it kill you”</p>
-                        <p>Steve Jobs</p>
+                        <p className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.about.whoAmI.quote}</p>
+                        <p className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.about.whoAmI.author}</p>
                     </div>
                 </div>
                 {/* image */}
