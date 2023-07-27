@@ -13,6 +13,53 @@
         "firstSub":"Bienvenido a mi mundo",
         "mainTitle":"Hola, Soy Luis Sanchez un desarrollador full stack",
         "secondSub":"Yo puedo ayudarte a contruir tu proyecto , funcionalidad o sitio web. Mira a traves de algunos de mis trabajos y experiencia! Si te gusta lo que ves y tienes un proyecto similar, no dudes en contactarme!",
-        "followMe": "Sigueme en"
+        "followMe": "Sigueme en •  •  • ",
+        "carusel":{
+            "1":{
+                "amount":"01",
+                "title":"Ingeniero en Telematica"
+            },
+            "2":{
+                "amount":"02",
+                "title":"Desarrollador Full Stack"
+            },
+            "3":{
+                "amount":"03",
+                "title":"Freelancer"
+
+            },
+            "4":{
+                "amount":"01",
+                "title":"años de experiencia"
+            },
+            "5":{
+                "amount":"40+",
+                "title":"Proyectos"
+            }
+        
+        },
+        "featureTitle":"Habilidades",
+            "featureSub":"Que puedo hacer por ti",
+            "features":{
+                "1":{
+                    "title": "Estrategia de negocios",
+                    "description":"Puedo ayudarte a crear una estrategia de negocios para mejorar tu negocio"
+                },
+                "2":{
+                    "title": "Desarrollo Web",
+                    "description":" Puedo ayudarte a crear una estrategia de negocios para mejorar tu negocio"
+                },
+                "3":{
+                    "title": "Desarrollo de aplicaciones moviles",
+                    "description":"Puedo ayudarte a crear una estrategia de negocios para mejorar tu negocio"
+                }
+            },
+            "proyectMind":"¿Tienes un proyecto en mente?",
+            "projectSub":"Dejame ayudarte a construirlo",
+            "contact":"luissanchezzamora23@gmail.com"
+    },
+    "footer": {
+        "designed": "Diseñado y desarrollado por Luis Sanchez",
+        "rights": "© 2023 Luis Sanchez. Todos los derechos reservados."
     }
 }
