@@ -2,6 +2,64 @@
         "header":{
             "home":"Home",
             "about":"About",
-            "contact":"Contact"
+            "contact":"Contact",
+            "portfolio":"Portfolio",
+            "services":"Services",
+            "blog":"Blog",
+            "dark":"Dark",
+            "light":"Light"
+        },
+        "home":{
+            "firstSub":"Welcome to my World",
+            "mainTitle":"Hi, I`m Luis Sanchez a Full Stack Web Developer",
+            "secondSub":"I can help you build your project , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don`t hesitate to contact me.",
+            "followMe": "Follow me •  •  • ",
+            "carusel":{
+                "1":{
+                    "amount":"01",
+                    "title":"Telematics Engineer"
+                },
+                "2":{
+                    "amount":"02",
+                    "title":"Full Stack Web Developer"
+                },
+                "3":{
+                    "amount":"03",
+                    "title":"Freelancer"
+
+                },
+                "4":{
+                    "amount":"01",
+                    "title":"Years Experience"
+                },
+                "5":{
+                    "amount":"40+",
+                    "title":"Projects"
+                }
+            
+            },
+            "featureTitle":"Features",
+            "featureSub":"What I Do",
+            "features":{
+                "1":{
+                    "title": "Businness Strategy",
+                    "description":"I can help you to create a business strategy to improve your business"
+                },
+                "2":{
+                    "title": "Web Development",
+                    "description":"I can help you to create a business strategy to improve your business"
+                },
+                "3":{
+                    "title": "Mobile Development",
+                    "description":"I can help you to create a business strategy to improve your business"
+                }
+            },
+            "proyectMind":"Do you have a project in mind?",
+            "projectSub":"Let me help you to make it happen",
+            "contact":"luissanchezzamora23@gmail.com"
+        },
+        "footer": {
+            "designed": "Designed and Developed by Luis Sanchez",
+            "rights": "© 2023 Luis Sanchez. All rights reserved."
         }
     }

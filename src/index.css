@@ -8,3 +8,15 @@
 * {
   font-family: 'Ubuntu', sans-serif;
 }
+
+.invert-colors {
+  filter: invert(1); /* Invierte los colores de la imagen */
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-align: center;
+  justify-content: center;
+}
+
+

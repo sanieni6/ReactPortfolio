@@ -6,6 +6,7 @@ import Home from './routes/Home';
 import Portfolio from './routes/Portfolio';
 import Services from './routes/Services';
 import Header from './routes/Header';
+import Footer from './routes/Footer';
 
 
 import './App.css'
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/Blog" element={<Blog />} />
           <Route path="/Contact" element={<Contact />} />
         </Routes>
+      <Footer />
     </>
   )
 };
