@@ -76,6 +76,106 @@
             "hobbie4":"Peliculas y series",
             "quote":"“Encuentra lo que amas, y deja que te destruya”",
             "author":"Charles Bukowski"
+        },
+        "skills": {
+            "title": "Skills",
+            "list" : {
+                "1": {
+                    "name": "Javascript",
+                    "alt": "Javascript",
+                    "icon": "Javascript"
+                },
+                "2": {
+                    "name": "React",
+                    "alt": "React",
+                    "icon": "React"
+                },
+                "3": {
+                    "name": "Redux",
+                    "alt": "Redux",
+                    "icon": "Redux"
+                },
+                "4": {
+                    "name": "Git",
+                    "alt": "Git",
+                    "icon": "Git"
+                },
+                "5": {
+                    "name": "Html & CSS",
+                    "alt": "Html & CSS",
+                    "icon": "Html & CSS"
+                },
+                "6": {
+                    "name": "PostgreSQL",
+                    "alt": "PostgreSQL",
+                    "icon": "PostgreSQL"
+                },
+                "7": {
+                    "name": "Ruby",
+                    "alt": "Ruby",
+                    "icon": "Ruby"
+                },
+                "8": {
+                    "name": "Ruby on Rails",
+                    "alt": "Ruby on Rails",
+                    "icon": "Ruby on Rails"
+                },
+                "9": {
+                    "name": "Python",
+                    "alt": "Python",
+                    "icon": "Python"
+                }
+            }
+        },
+        "softSkills" : {
+            "title" : "Soft Skills",
+            "list" : {
+                "1": {
+                    "name": "Teamwork",
+                    "alt": "Teamwork",
+                    "icon": "Teamwork"
+                },
+                "2": {
+                    "name": "Communication",
+                    "alt": "Communication",
+                    "icon": "Communication"
+                },
+                "3": {
+                    "name": "Agile Scrum",
+                    "alt": "Agile Scrum",
+                    "icon": "Agile"
+                },
+                "4": {
+                    "name": "Remote Work",
+                    "alt": "Remote Work",
+                    "icon": "Remote"
+                },
+                "5": {
+                    "name": "Pair Programming",
+                    "alt": "Pair Programming",
+                    "icon": "Pair"
+                }
+            }
+        },
+        "otherSkills" : {
+            "title" : "Other Skills",
+            "list" : {
+                "1": {
+                    "name": "Robotics",
+                    "alt": "Robotics",
+                    "icon": "Robotics"
+                },
+                "2": {
+                    "name": "Microcontrollers Programming",
+                    "alt": "Microcontrollers Programming",
+                    "icon": "Microcontrollers"
+                },
+                "3": {
+                    "name": "CCNA: Routing and Switching",
+                    "alt": "CCNA: Routing and Switching",
+                    "icon": "CCNA"
+                }
+            }
         }
     }
 }
