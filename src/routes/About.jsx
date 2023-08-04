@@ -113,28 +113,28 @@ const About = () => {
 
   const experience = () => {
     return (
-      <div className="flex flex-col w-5/6 items-center justify-center">
+      <div className="flex flex-col w-5/6 items-center justify-center my-7">
         <h2
           className={`${
             darkMode ? "text-lightText" : "text-darkText"
-          }  mb-7`}
+          }  mb-7 text-3xl`}
         >
           {currentLanguage.about.experience.title}
         </h2>
           {Object.keys(currentLanguage.about.experience.list).map((key) => (
-            <div key={key} className="flex gap-4 justify-center">
+            <div key={key} className="flex gap-4 justify-center mb-4">
                 <div className="flex gap-2 ">
                     <p
                     className={`${
                         darkMode ? "text-lightText" : "text-darkText"
-                      } text-left text-1xl`}
+                      } text-left text-xl`}
                     >
                         {currentLanguage.about.experience.list[key].year}
                     </p>
                     <div className="w-2 flex-1 flex flex-col  justify-start items-center">
                         <div className= {`${
               darkMode ? "bg-lightSecond" : "bg-darkSecond"
-            } w-4 h-4 rounded-full mt-1`}></div>
+            } w-4 h-4 rounded-full mt-2`}></div>
                         <hr className= {`${
               darkMode ? "border-lightSecond" : "border-darkSecond"
             } border-l flex-grow m-1`} />
@@ -151,25 +151,18 @@ const About = () => {
               <p
                 className={`${
                   darkMode ? "text-lightText" : "text-darkText"
-                } text-left`}
+                } text-left text-xl`}
               >
-                {currentLanguage.about.experience.list[key].type}
+                {currentLanguage.about.experience.list[key].ubication} - {currentLanguage.about.experience.list[key].type}
               </p>
               <p
                 className={`${
                   darkMode ? "text-lightText" : "text-darkText"
-                } text-left`}
-              >
-                {currentLanguage.about.experience.list[key].ubication}
-              </p>
-              <p
-                className={`${
-                  darkMode ? "text-lightText" : "text-darkText"
-                } text-left`}
+                } text-left text-xl`}
               >
                 {currentLanguage.about.experience.list[key].address}
               </p>
-              <div className="w-4/5">
+              <div className="w-4/5 mt-5">
                 {currentLanguage.about.experience.list[key].descrip.map(
                   (text, index) => (
                     <p 
@@ -189,57 +182,52 @@ const About = () => {
 
   const education = () => {
     return (
-      <div>
-        <div>
+      <div className="w-3/4 flex flex-col justify-center items-center">
+        <div className="w-3/4 flex flex-col justify-center">
         <h2
           className={`${
             darkMode ? "text-lightText" : "text-darkText"
-          } text-left mb-7`}
+          } my-7 text-3xl`}
         >
           {currentLanguage.about.education.title}
         </h2>
         <p
         className={`${
             darkMode ? "text-lightText" : "text-darkText"
-          } text-left mb-7`}
+          } mb-7`}
         >Education Is Not The Learning Of Facts, But The Training Of The Mind To Think.
         </p>
         </div>
-        <div className="w-full flex flex-col gap-7">
+        <div className="w-full flex flex-col gap-7 justify-center items-center">
           {Object.keys(currentLanguage.about.education.list).map((key) => (
-            <div key={key} className="flex gap-2 w-full p-2 border">
+            <div key={key} className={`${
+              darkMode ? "bg-lightThird" : "bg-darkThird"
+            } mb-7 flex gap-2 w-5/6`}>
                 <div className="">
-                <img src={currentLanguage.about.education.list[key].image} alt={currentLanguage.about.education.list[key].institution} className="w-20 h-full" />
+                <img src={currentLanguage.about.education.list[key].image} alt={currentLanguage.about.education.list[key].institution} className="w-28 h-full" />
                 </div>
                 
-                <div>
+                <div className="p-2 mr-4">
               <p
                 className={`${
                   darkMode ? "text-lightText" : "text-darkText"
-                } text-left`}
-              >
-                {currentLanguage.about.education.list[key].institution}
-              </p>
-              <p
-                className={`${
-                  darkMode ? "text-lightText" : "text-darkText"
-                } text-left`}
+                } text-left text-3xl`}
               >
                 {currentLanguage.about.education.list[key].grade}
               </p>
               <p
                 className={`${
                   darkMode ? "text-lightText" : "text-darkText"
-                } text-left`}
+                } text-left text-xl`}
               >
-                {currentLanguage.about.education.list[key].startDate}
+                {currentLanguage.about.education.list[key].institution}
               </p>
               <p
                 className={`${
                   darkMode ? "text-lightText" : "text-darkText"
-                } text-left`}
+                } text-left text-lg`}
               >
-                {currentLanguage.about.education.list[key].endDate}
+                {currentLanguage.about.education.list[key].startDate} - {currentLanguage.about.education.list[key].endDate}
               </p>
               </div>
             </div>
