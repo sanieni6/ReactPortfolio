@@ -256,5 +256,50 @@
 
                 }
             }
+        },
+        "projects" : {
+            "title" : "My works",
+            "list" : {
+                "1" : {
+                    "title" : "Videogames Rental App",
+                    "Description" : "Videogames rental App is a powerful application that lets the user to rent a videogame. It also lets the admin to create new videogames or delete them.",
+                    "live" : "https://videogames-capstone.onrender.com/",
+                    "code" : "https://github.com/sanieni6/mc_videogames_back",
+                    "image" : "/src/images/videogamesRental.png",
+                    "tags" : [ "Javascript", "CSS", "SASS", "React", "API", "AXIOS", "Redux", "Bootstrap", "Rails", "Ruby"]
+                },
+                "2" : {
+                    "title" : "BookStore",
+                    "Description" : "This page allows the user to display a list of books, add a book, and remove a selected book. ",
+                    "live" : "https://bookstore.luissanchezdev.me/",
+                    "code" : "https://github.com/sanieni6/Bookstore",
+                    "image" : "/src/images/bookstore.png",
+                    "tags" : [ "Javascript", "CSS", "SASS", "React", "API", "AXIOS", "Redux"]
+                },
+                "3" : {
+                    "title" : "Space Travelers Hub",
+                    "Description" : "The Space Travelers Hub is a web application that allows users to book rockets and join selected space missions provided by a company that offers commercial and scientific space travel services.",
+                    "live" : "https://spacetravelershub-j37j.onrender.com/",
+                    "code" : "https://github.com/sanieni6/Space-Travelers-Hub",
+                    "image" : "/src/images/space.png",
+                    "tags" : [ "Javascript", "CSS", "SASS", "React", "API", "AXIOS", "Redux"]
+                },
+                "4" : {
+                    "title" : "Artwork Listing App",
+                    "Description" : "Artork Listing App is a single-page web application based on the Art Institute of Chicago's API.",
+                    "live" : "https://sanieni6.github.io/artworkListing-app/",
+                    "code" : "https://github.com/sanieni6/artworkListing-app",
+                    "image" : "/src/images/artwork.png",
+                    "tags" : [ "Javascript", "CSS", "SASS", "Webpack", "API"]
+                },
+                "5" : {
+                    "title" : "Math Magicians",
+                    "Description" : "Math Magicians is a web project made with the React framework. The project also utilizes an API to fetch and display data on the page. This website is for all fans of mathematics. ",
+                    "live" : "https://mathmagiciansapp.onrender.com/",
+                    "code" : "https://github.com/sanieni6/mathMagicians",
+                    "image" : "/src/images/mat.png",
+                    "tags" : [ "React", "JavaScript", "API"]
+                }
+            }
         }
     }

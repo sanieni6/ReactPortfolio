@@ -191,7 +191,13 @@
                     "type" : "Auto empleo",
                     "ubication" : "Remoto",
                     "address" : "Guayas, Ecuador",
-                    "year" : "2023"
+                    "year" : "2023",
+                    "descrip" : [
+                        "- Developing and implementing several projects as a Full-stack developer to deliver exceptional web solutions",
+                        "- Collaborating with a remote, international team to create a real-time messaging application, resulting in a seamless communication experience for users across different time zones.",
+                        "- Implementing Agile methodologies to streamline project workflows, resulting in a 20% reduction in development time and on-time delivery of all projects.",
+                        "- Researching and integrating the latest technologies and frameworks, staying ahead of industry trends, and consistently delivering modern, high-performing applications."
+                    ]
                 },
                 "2" : {
                     "position" :"Desarrollador Junior Python",
@@ -199,7 +205,12 @@
                     "type" : "Freelance",
                     "ubication" : "Remoto",
                     "address" : "Quevedo, Ecuador",
-                    "year" : "2022"
+                    "year" : "2022",
+                    "descrip" :[
+                        "- Successfully developed and implemented Python scripts to automate tasks, resulting in a 50% reduction in manual effort and increased efficiency for clients.",
+                        "- Designed and built custom Python applications that improved workflow and productivity for end-users, resulting in a 97% satisfaction rate and positive feedback from clients.",
+                        "- Effectively debugged and tested Python code to ensure reliability and accuracy, resulting in a 95% decrease in errors and improved performance for end-users."
+                    ]
                 },
                 "3" : {
                     "position" :"Asistente Técnico",
@@ -207,7 +218,12 @@
                     "type" : "Tiempo completo",
                     "ubication" : "Presencial",
                     "address" : "Quevedo, Ecuador",
-                    "year" : "2021"
+                    "year" : "2021",
+                    "descrip" : [
+                        "- Successfully provided technical support for network equipment and computers, resulting in a 95% decrease in downtime and increased productivity for the organization.",
+                        "- Led wireless network installations for several clients, resulting in a 100% satisfaction rate and increased revenue for the company.",
+                        "- Implemented a proactive maintenance program for radio link antennas, resulting in a 50% decrease in equipment failure and improved service quality for customers."
+                    ]
                 }
             }
         },
@@ -236,6 +252,52 @@
                     "image" : "https://yt3.googleusercontent.com/-eGKqJIcnI3LuggGXi8hKis4BpYZBzLDGOZCe9uLDKPht7ClVJ_5pI5WtJHDq-HG16oy-B5x7dg=s900-c-k-c0x00ffffff-no-rj"
                 }
 
+            }
+        }
+        
+    },
+    "projects" : {
+        "title" : "Mis proyectos",
+        "list" : {
+            "1" : {
+                "title" : "Videogames Rental App",
+                "Description" : "Videogames rental App es una poderosa aplicación que permite a los usuarios rentar un videojuego. El administrador puede crear y eliminar videojuegos",
+                "live" : "https://videogames-capstone.onrender.com/",
+                "code" : "https://github.com/sanieni6/mc_videogames_back",
+                "image" : "/src/images/videogamesRental.png",
+                "tags" : [ "Javascript", "CSS", "SASS", "React", "API", "AXIOS", "Redux", "Bootstrap", "Rails", "Ruby"]
+            },
+            "2" : {
+                "title" : "BookStore",
+                "Description" : "Esta pagina permite a los usurios visualizar una lista de libros, agregar un libro, y remover un libro seleccionado. ",
+                "live" : "https://bookstore.luissanchezdev.me/",
+                "code" : "https://github.com/sanieni6/Bookstore",
+                "image" : "/src/images/bookstore.png",
+                "tags" : [ "Javascript", "CSS", "SASS", "React", "API", "AXIOS", "Redux"]
+            },
+            "3" : {
+                "title" : "Space Travelers Hub",
+                "Description" : "The Space Travelers Hub es una aplicacion web que permite a los usuarios reservar un cohete y unirse a las misiones espaciales provistas por una compañia que ofrece servicios de viajes espaciales comerciales y cientificos.",
+                "live" : "https://spacetravelershub-j37j.onrender.com/",
+                "code" : "https://github.com/sanieni6/Space-Travelers-Hub",
+                "image" : "/src/images/space.png",
+                "tags" : [ "Javascript", "CSS", "SASS", "React", "API", "AXIOS", "Redux"]
+            },
+            "4" : {
+                "title" : "Artwork Listing App",
+                "Description" : "Artork Listing App es una aplicacion web basada en la API del instituto de Arte de Chicago.",
+                "live" : "https://sanieni6.github.io/artworkListing-app/",
+                "code" : "https://github.com/sanieni6/artworkListing-app",
+                "image" : "/src/images/artwork.png",
+                "tags" : [ "Javascript", "CSS", "SASS", "Webpack", "API"]
+            },
+            "5" : {
+                "title" : "Math Magicians",
+                "Description" : "Math Magicians es un proyecto web hecho con React. El proyecto hace uso de una API para consultar datos y mostrarlos en la pagina. Este sitio web es para todos los fans de las matemáticas. ",
+                "live" : "https://mathmagiciansapp.onrender.com/",
+                "code" : "https://github.com/sanieni6/mathMagicians",
+                "image" : "/src/images/mat.png",
+                "tags" : [ "React", "JavaScript", "API"]
             }
         }
     }
