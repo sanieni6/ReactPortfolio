@@ -301,5 +301,23 @@
                     "tags" : [ "React", "JavaScript", "API"]
                 }
             }
+        },
+        "contact" : {
+            "secondTitle" : "CONTACT",
+            "mainTitle" : "Contact with Me",
+            "name" : "Luis Sánchez",
+            "position" : "Full-stack Developer",
+            "paragraph" : "Im available for freelance projects. Connect with me via and call in to my account",
+            "phone" : "Phone",
+            "number" : "+593 968651722",
+            "email" : "email",
+            "address" : "luissanchezzamora23@gmail.com",
+            "find" : "FIND WITH ME",
+            "nameInput" : "YOUR NAME",
+            "phoneInput" : "PHONE NUMBER",
+            "emailInput" : "EMAIL",
+            "subjectInput" : "SUBJECT",
+            "messageInput" : "YOUR MESSAGE",
+            "sendBtn" : "SEND MESSAGE"
         }
     }

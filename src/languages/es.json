@@ -300,5 +300,23 @@
                 "tags" : [ "React", "JavaScript", "API"]
             }
         }
+    },
+    "contact" : {
+        "secondTitle" : "CONTACTO",
+        "mainTitle" : "Contacta Conmigo",
+        "name" : "Luis Sánchez",
+        "position" : "Desarrollador Full-stack ",
+        "paragraph" : "Estoy disponible para projectos independientes. Contacta conmigo a traves de mi correo o teléfono",
+        "phone" : "Teléfono",
+        "number" : "+593 968651722",
+        "email" : "Correo",
+        "address" : "luissanchezzamora23@gmail.com",
+        "find" : "AVERIGUA MAS",
+        "nameInput" : "TU NOMBRE",
+        "phoneInput" : "NÚMERO DE TELÉFONO",
+        "emailInput" : "CORREO",
+        "subjectInput" : "ASUNTO",
+        "messageInput" : "TU MENSAJE",
+        "sendBtn" : "ENVIAR MENSAJE"
     }
 }
