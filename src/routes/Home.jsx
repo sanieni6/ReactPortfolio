@@ -3,6 +3,8 @@ import facebook from '../images/icons8-facebook.svg';
 import github from '../images/icons8-github.svg';
 import linkedin from '../images/icons8-linkedin.svg';
 import medium from '../images/medium.svg';
+import portrait from "../images/portrait2.png";
+
 const Home = () => {
     const { darkMode } = useSelector((store) => store.mode);
     const { currentLanguage } = useSelector((store) => store.languages);
@@ -17,7 +19,7 @@ const Home = () => {
     );
 
     const valuableCarussel = () => (
-        <div className='w-full flex flex-row justify-center gap-7 my-6'>
+        <div className='w-full flex flex-row justify-center gap-7 my-6 px-7'>
             {Object.keys(currentLanguage.home.carusel).map((key) => (
                 <div key={key} className= {`border-solid border ${darkMode? 'border-lightSecond':'border-darkSecond'} p-2 w-1/6 rounded-tr-lg` }>
                     <h3 className={`${darkMode? 'text-lightText':'text-darkText'} text-2xl mb-2`}>{currentLanguage.home.carusel[key].amount}</h3>
@@ -28,7 +30,7 @@ const Home = () => {
     );
 
     const features = () => (
-        <div className='w-full my-6 flex flex-col gap-2'>
+        <div className='w-full my-6 flex flex-col gap-2 px-7'>
             <div className='self-start ml-5 flex flex-col items-start'>
                 <p className={`${darkMode? 'text-lightSecond':'text-darkSecond'} `}>{currentLanguage.home.featureTitle}</p>
                 <h2 className={`${darkMode? 'text-lightText':'text-darkText'} text-4xl`}>{currentLanguage.home.featureSub}</h2>
@@ -46,12 +48,15 @@ const Home = () => {
     );
 
     return (
-        <div className='w-full' >
-            <div className='flex flex-row w-full justify-between  my-7 h-max py-4'>
-                <div className='w-2/4 ml-4 flex flex-col gap-2'>
+        <div className='w-full mheader' >
+            <div className='flex flex-row w-full justify-between  my-7 h-max py-4 px-7'>
+                <div className='w-2/4 flex flex-col gap-2'>
                     <p className={`${darkMode? 'text-lightText':'text-darkText'} ${darkMode? 'bg-lightSecond':'bg-darkSecond'} w-max rounded p-2`}>{currentLanguage.home.firstSub}</p>
                     <h1 className={`${darkMode? 'text-lightText':'text-darkText'} text-4xl`}>{currentLanguage.home.mainTitle}</h1>
                     <p className={`${darkMode? 'text-lightText':'text-darkText'} text-xl`}>{currentLanguage.home.secondSub}</p>
+                </div>
+                <div>
+                    <img src={portrait} alt="Luis Sanchez" />
                 </div>
                 <div className='mr-3'>
                     <p className={`${darkMode? 'text-lightText':'text-darkText'} vertical-text mb-3`}>{currentLanguage.home.followMe}</p>

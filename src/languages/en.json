@@ -7,7 +7,8 @@
             "services":"Services",
             "blog":"Blog",
             "dark":"Dark",
-            "light":"Light"
+            "light":"Light",
+            "resume" : "Resume"
         },
         "home":{
             "firstSub":"Welcome to my World",

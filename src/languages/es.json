@@ -7,7 +7,8 @@
         "services":"Servicios",
         "blog":"Blog",
         "dark":"Oscuro",
-        "light":"Claro"
+        "light":"Claro",
+        "resume" : "Resume"
     },
     "home":{
         "firstSub":"Bienvenido a mi mundo",

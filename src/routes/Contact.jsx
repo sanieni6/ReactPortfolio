@@ -20,7 +20,7 @@ const Contact = () => {
     );
 
     return (
-        <div className="w-full flex flex-col justify-center items-center">
+        <div className="w-full flex flex-col justify-center items-center mheader">
             <div className="w-3/4 mt-7">
                 <h3 className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.contact.secondTitle}</h3>
                 <h2 className={`${darkMode? 'text-lightText':'text-darkText'} text-2xl`}>{currentLanguage.contact.mainTitle}</h2>

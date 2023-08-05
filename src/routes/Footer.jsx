@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
     );
     return (
-        <footer className='w-full flex flex-col '>
+        <footer className='w-full flex flex-col px-7'>
             {/* personal info */}
             <div className='w-full flex flex-row justify-between items-center'>
                     <div>

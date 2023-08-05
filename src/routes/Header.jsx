@@ -24,7 +24,7 @@ const Header = () => {
 
     
     return (
-        <header className={`flex flex-row justify-between w-full ${darkMode? 'bg-lightMain':'bg-darkMain'} p-5`} >
+        <header className={`flex flex-row justify-between w-full ${darkMode? 'bg-lightMain':'bg-darkThird'} p-5 fixed top-0 left-0 z-10`} >
             <h1 className={`${darkMode? 'text-lightText':'text-darkText'}`}>&lt; Luis Sanchez /&gt;</h1>
             <nav className='flex'>
                 <ul className='flex flex-row gap-4'>
@@ -42,6 +42,9 @@ const Header = () => {
                     </li>
                     <li>
                         <NavLink to="/Contact" className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.header.contact}</NavLink>
+                    </li>
+                    <li>
+                        <a href="https://docs.google.com/document/d/18wiUSsQHfWPmb2Ba24ylWVNkTu2uVvTIgD-eTbi7zLw/edit?usp=sharing" className={`${darkMode? 'text-lightText':'text-darkText'} border py-2 px-3 rounded ${darkMode? 'border-lightSecond':'border-darkSecond'}`}>{currentLanguage.header.resume}</a>
                     </li>
                     <li>
                         <button onClick={handleClick} className={`${darkMode? 'text-lightText':'text-darkText'}`}>

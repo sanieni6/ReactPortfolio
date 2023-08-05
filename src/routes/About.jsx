@@ -238,7 +238,7 @@ const About = () => {
   };
 
   return (
-    <div className="w-full">
+    <div className="w-full mheader">
       <div className="flex flex-row w-full justify-between  my-7 h-max py-4">
         {/* who am i? */}
         <div className="flex flex-col items-start ml-7">
