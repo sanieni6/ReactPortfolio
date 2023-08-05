@@ -38,9 +38,6 @@ const Header = () => {
                         <NavLink to="/Portfolio" className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.header.portfolio}</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/Services" className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.header.services}</NavLink>
-                    </li>
-                    <li>
                         <NavLink to="/Blog" className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.header.blog}</NavLink>
                     </li>
                     <li>

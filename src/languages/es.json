@@ -61,5 +61,262 @@
     "footer": {
         "designed": "Diseñado y desarrollado por Luis Sanchez",
         "rights": "© 2023 Luis Sanchez. Todos los derechos reservados."
+    },
+    "about": {
+        "whoAmI": {
+            "title": "Conoce quien soy",
+            "second": "Hola, Soy Luis Sanchez un desarrollador full stack e ingeniero en telematica",
+            "third" : "Soy una persona apasionada por la tecnologia y amo aprender cosas nuevas, me gusta trabajar en equipo y siempre estoy buscando nuevas formas de mejorar mis habilidades.",
+            "fouth":"Como autodidacta, me gusta aprender por mi cuenta y siempre estoy en busqueda de nuevos retos",
+            "fifth":"Me gusta trabajar en equipo y siempre estoy buscando nuevas formas de mejorar mis habilidades",
+            "sixth":"Aparte de la programacion, otras actividades que me amo hacer son:",
+            "hobbie1":"📚 Leer",
+            "hobbie2":"Calistenia",
+            "hobbie3":"Ciencia de datos",
+            "hobbie4":"Peliculas y series",
+            "quote":"“Encuentra lo que amas, y deja que te destruya”",
+            "author":"Charles Bukowski"
+        },
+        "skills": {
+            "title": "Skills",
+            "list" : {
+                "1": {
+                    "name": "Javascript",
+                    "alt": "Javascript",
+                    "icon": "/src/images/javascript.svg"
+                },
+                "2": {
+                    "name": "React",
+                    "alt": "React",
+                    "icon": "/src/images/react.svg"
+                },
+                "3": {
+                    "name": "Redux",
+                    "alt": "Redux",
+                    "icon": "/src/images/redux.svg"
+                },
+                "4": {
+                    "name": "Git",
+                    "alt": "Git",
+                    "icon": "/src/images/git.svg"
+                },
+                "5": {
+                    "name": "Html",
+                    "alt": "Html",
+                    "icon": "/src/images/html.svg"
+                },
+                "6": {
+                    "name": "PostgreSQL",
+                    "alt": "PostgreSQL",
+                    "icon": "/src/images/postgresql.svg"
+                },
+                "7": {
+                    "name": "Ruby",
+                    "alt": "Ruby",
+                    "icon": "/src/images/ruby.svg"
+                },
+                "8": {
+                    "name": "Ruby on Rails",
+                    "alt": "Ruby on Rails",
+                    "icon": "/src/images/rails.svg"
+                },
+                "9": {
+                    "name": "Python",
+                    "alt": "Python",
+                    "icon": "/src/images/python.svg"
+                },
+                "10": {
+                    "name": "CSS",
+                    "alt": "CSS",
+                    "icon": "/src/images/css.svg"
+                }
+            }
+        },
+        "softSkills" : {
+            "title" : "Soft Skills",
+            "list" : {
+                "1": {
+                    "name": "Teamwork",
+                    "alt": "Teamwork",
+                    "icon": "/src/images/teamwork.svg"
+                },
+                "2": {
+                    "name": "Communication",
+                    "alt": "Communication",
+                    "icon": "/src/images/comunication.png"
+                },
+                "3": {
+                    "name": "Agile Scrum",
+                    "alt": "Agile Scrum",
+                    "icon": "/src/images/scrum.png"
+                },
+                "4": {
+                    "name": "Remote Work",
+                    "alt": "Remote Work",
+                    "icon": "/src/images/remotework.svg"
+                },
+                "5": {
+                    "name": "Pair Programming",
+                    "alt": "Pair Programming",
+                    "icon": "/src/images/pair.svg"
+                }
+            }
+        },
+        "otherSkills" : {
+            "title" : "Other Skills",
+            "list" : {
+                "1": {
+                    "name": "Robotics",
+                    "alt": "Robotics",
+                    "icon": "/src/images/robotics.png"
+                },
+                "2": {
+                    "name": "Microcontrollers Programming",
+                    "alt": "Microcontrollers Programming",
+                    "icon": "/src/images/circuit.png"
+                },
+                "3": {
+                    "name": "CCNA: Routing and Switching",
+                    "alt": "CCNA: Routing and Switching",
+                    "icon": "/src/images/routing.png"
+                }
+            }
+        },
+        "experience" : {
+            "title":"Mi experiencia",
+            "list" : {
+                "1" : {
+                    "position" : "Desarrollador Full-stack ",
+                    "company" : "Microverse",
+                    "type" : "Auto empleo",
+                    "ubication" : "Remoto",
+                    "address" : "Guayas, Ecuador",
+                    "year" : "2023",
+                    "descrip" : [
+                        "- Developing and implementing several projects as a Full-stack developer to deliver exceptional web solutions",
+                        "- Collaborating with a remote, international team to create a real-time messaging application, resulting in a seamless communication experience for users across different time zones.",
+                        "- Implementing Agile methodologies to streamline project workflows, resulting in a 20% reduction in development time and on-time delivery of all projects.",
+                        "- Researching and integrating the latest technologies and frameworks, staying ahead of industry trends, and consistently delivering modern, high-performing applications."
+                    ]
+                },
+                "2" : {
+                    "position" :"Desarrollador Junior Python",
+                    "company" : "Upwork",
+                    "type" : "Freelance",
+                    "ubication" : "Remoto",
+                    "address" : "Quevedo, Ecuador",
+                    "year" : "2022",
+                    "descrip" :[
+                        "- Successfully developed and implemented Python scripts to automate tasks, resulting in a 50% reduction in manual effort and increased efficiency for clients.",
+                        "- Designed and built custom Python applications that improved workflow and productivity for end-users, resulting in a 97% satisfaction rate and positive feedback from clients.",
+                        "- Effectively debugged and tested Python code to ensure reliability and accuracy, resulting in a 95% decrease in errors and improved performance for end-users."
+                    ]
+                },
+                "3" : {
+                    "position" :"Asistente Técnico",
+                    "company" : "CineCableTV",
+                    "type" : "Tiempo completo",
+                    "ubication" : "Presencial",
+                    "address" : "Quevedo, Ecuador",
+                    "year" : "2021",
+                    "descrip" : [
+                        "- Successfully provided technical support for network equipment and computers, resulting in a 95% decrease in downtime and increased productivity for the organization.",
+                        "- Led wireless network installations for several clients, resulting in a 100% satisfaction rate and increased revenue for the company.",
+                        "- Implemented a proactive maintenance program for radio link antennas, resulting in a 50% decrease in equipment failure and improved service quality for customers."
+                    ]
+                }
+            }
+        },
+        "education" : {
+            "title" : "Educación",
+            "list" : {
+                "1" : {
+                    "institution" : "Microverse",
+                    "grade" : "Desarrollador Web Full-stack",
+                    "startDate" : "Enero 2023",
+                    "endDate" : "Septiembre 2023",
+                    "image" : "data:image/png;base64,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"
+                },
+                "2" : {
+                    "institution" : "Platzi",
+                    "grade" : "Desarrollador Python",
+                    "startDate" : "Marzo 2022",
+                    "endDate" : "Noviembre 2022",
+                    "image" : "https://yt3.googleusercontent.com/rwU607PYF9jK9QL2I85SdfCLVZJGGsxWukuF_LxD0PepnqEIrFVg3W85FOVPDmWdMN1SxyJ7Xi8=s900-c-k-c0x00ffffff-no-rj"
+                },
+                "3" : {
+                    "institution" : "Universidad Tecnica Estatal de Quevedo",
+                    "grade" : "Ingeniero en Telématica",
+                    "startDate" : "Septiembre 2017",
+                    "endDate" : "Marzo 2022",
+                    "image" : "https://yt3.googleusercontent.com/-eGKqJIcnI3LuggGXi8hKis4BpYZBzLDGOZCe9uLDKPht7ClVJ_5pI5WtJHDq-HG16oy-B5x7dg=s900-c-k-c0x00ffffff-no-rj"
+                }
+
+            }
+        }
+        
+    },
+    "projects" : {
+        "title" : "Mis proyectos",
+        "list" : {
+            "1" : {
+                "title" : "Videogames Rental App",
+                "Description" : "Videogames rental App es una poderosa aplicación que permite a los usuarios rentar un videojuego. El administrador puede crear y eliminar videojuegos",
+                "live" : "https://videogames-capstone.onrender.com/",
+                "code" : "https://github.com/sanieni6/mc_videogames_back",
+                "image" : "/src/images/videogamesRental.png",
+                "tags" : [ "Javascript", "CSS", "SASS", "React", "API", "AXIOS", "Redux", "Bootstrap", "Rails", "Ruby"]
+            },
+            "2" : {
+                "title" : "BookStore",
+                "Description" : "Esta pagina permite a los usurios visualizar una lista de libros, agregar un libro, y remover un libro seleccionado. ",
+                "live" : "https://bookstore.luissanchezdev.me/",
+                "code" : "https://github.com/sanieni6/Bookstore",
+                "image" : "/src/images/bookstore.png",
+                "tags" : [ "Javascript", "CSS", "SASS", "React", "API", "AXIOS", "Redux"]
+            },
+            "3" : {
+                "title" : "Space Travelers Hub",
+                "Description" : "The Space Travelers Hub es una aplicacion web que permite a los usuarios reservar un cohete y unirse a las misiones espaciales provistas por una compañia que ofrece servicios de viajes espaciales comerciales y cientificos.",
+                "live" : "https://spacetravelershub-j37j.onrender.com/",
+                "code" : "https://github.com/sanieni6/Space-Travelers-Hub",
+                "image" : "/src/images/space.png",
+                "tags" : [ "Javascript", "CSS", "SASS", "React", "API", "AXIOS", "Redux"]
+            },
+            "4" : {
+                "title" : "Artwork Listing App",
+                "Description" : "Artork Listing App es una aplicacion web basada en la API del instituto de Arte de Chicago.",
+                "live" : "https://sanieni6.github.io/artworkListing-app/",
+                "code" : "https://github.com/sanieni6/artworkListing-app",
+                "image" : "/src/images/artwork.png",
+                "tags" : [ "Javascript", "CSS", "SASS", "Webpack", "API"]
+            },
+            "5" : {
+                "title" : "Math Magicians",
+                "Description" : "Math Magicians es un proyecto web hecho con React. El proyecto hace uso de una API para consultar datos y mostrarlos en la pagina. Este sitio web es para todos los fans de las matemáticas. ",
+                "live" : "https://mathmagiciansapp.onrender.com/",
+                "code" : "https://github.com/sanieni6/mathMagicians",
+                "image" : "/src/images/mat.png",
+                "tags" : [ "React", "JavaScript", "API"]
+            }
+        }
+    },
+    "contact" : {
+        "secondTitle" : "CONTACTO",
+        "mainTitle" : "Contacta Conmigo",
+        "name" : "Luis Sánchez",
+        "position" : "Desarrollador Full-stack ",
+        "paragraph" : "Estoy disponible para projectos independientes. Contacta conmigo a traves de mi correo o teléfono",
+        "phone" : "Teléfono",
+        "number" : "+593 968651722",
+        "email" : "Correo",
+        "address" : "luissanchezzamora23@gmail.com",
+        "find" : "AVERIGUA MAS",
+        "nameInput" : "TU NOMBRE",
+        "phoneInput" : "NÚMERO DE TELÉFONO",
+        "emailInput" : "CORREO",
+        "subjectInput" : "ASUNTO",
+        "messageInput" : "TU MENSAJE",
+        "sendBtn" : "ENVIAR MENSAJE"
     }
 }
