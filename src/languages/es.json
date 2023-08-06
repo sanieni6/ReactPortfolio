@@ -60,6 +60,12 @@
             "contact":"luissanchezzamora23@gmail.com"
     },
     "footer": {
+        "portfolio" : "Portfolio de Luis",
+        "description" : "Gracias por visitar mi portafolio web. Conecta conmigo a traves de mis redes.",
+        "description2": "Keep Rising 🚀. Conecta conmigo por chat!",
+        "quickLinks": "Quick Links",
+        "contactInfo": "Contact Info",
+        "site" : "Guayaquil, Ecuador",
         "designed": "Diseñado y desarrollado por Luis Sanchez",
         "rights": "© 2023 Luis Sanchez. Todos los derechos reservados."
     },

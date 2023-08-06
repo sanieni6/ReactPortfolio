@@ -113,10 +113,10 @@ const About = () => {
 
   const experience = () => {
     return (
-      <div className="flex flex-col w-5/6 items-center justify-center my-7">
+      <div className={`flex flex-col w-5/6 items-center justify-center my-7`}>
         <h2
           className={`${
-            darkMode ? "text-lightText" : "text-darkText"
+            darkMode ? "text-darkText" : "text-darkText"
           }  mb-7 text-3xl`}
         >
           {currentLanguage.about.experience.title}
@@ -126,7 +126,7 @@ const About = () => {
                 <div className="flex gap-2 ">
                     <p
                     className={`${
-                        darkMode ? "text-lightText" : "text-darkText"
+                        darkMode ? "text-darkText" : "text-darkText"
                       } text-left text-xl`}
                     >
                         {currentLanguage.about.experience.list[key].year}
@@ -143,21 +143,21 @@ const About = () => {
                 <div className="w-4/5">
               <p
                 className={`${
-                  darkMode ? "text-lightText" : "text-darkText"
+                  darkMode ? "text-darkText" : "text-darkText"
                 } text-left text-2xl`}
               >
                 {currentLanguage.about.experience.list[key].position}
               </p>
               <p
                 className={`${
-                  darkMode ? "text-lightText" : "text-darkText"
+                  darkMode ? "text-darkText" : "text-darkText"
                 } text-left text-xl`}
               >
                 {currentLanguage.about.experience.list[key].ubication} - {currentLanguage.about.experience.list[key].type}
               </p>
               <p
                 className={`${
-                  darkMode ? "text-lightText" : "text-darkText"
+                  darkMode ? "text-darkText" : "text-darkText"
                 } text-left text-xl`}
               >
                 {currentLanguage.about.experience.list[key].address}
@@ -168,7 +168,7 @@ const About = () => {
                     <p 
                     key={index}
                     className={`${
-                      darkMode ? "text-lightText" : "text-darkText"
+                      darkMode ? "text-darkText" : "text-darkText"
                     } text-left`}
                     >{text}</p>
                   ))}
@@ -210,21 +210,21 @@ const About = () => {
                 <div className="p-2 mr-4">
               <p
                 className={`${
-                  darkMode ? "text-lightText" : "text-darkText"
+                  darkMode ? "text-darkText" : "text-darkText"
                 } text-left text-3xl`}
               >
                 {currentLanguage.about.education.list[key].grade}
               </p>
               <p
                 className={`${
-                  darkMode ? "text-lightText" : "text-darkText"
+                  darkMode ? "text-darkText" : "text-darkText"
                 } text-left text-xl`}
               >
                 {currentLanguage.about.education.list[key].institution}
               </p>
               <p
                 className={`${
-                  darkMode ? "text-lightText" : "text-darkText"
+                  darkMode ? "text-darkText" : "text-darkText"
                 } text-left text-lg`}
               >
                 {currentLanguage.about.education.list[key].startDate} - {currentLanguage.about.education.list[key].endDate}
@@ -239,7 +239,7 @@ const About = () => {
 
   return (
     <div className="w-full mheader">
-      <div className="flex flex-row w-full justify-between  my-7 h-max py-4">
+      <div id="home" className="flex flex-row w-full justify-between  my-7 h-max py-4">
         {/* who am i? */}
         <div className="flex flex-col items-start ml-7">
           <h2
@@ -330,12 +330,17 @@ const About = () => {
         </div>
       </div>
       {/* skills */}
-      <div>{SkillsCarousel()}</div>
+      <div className={`${darkMode? 'bg-lightFifth':'bg-darkFourth'} py-5`}>
+        {SkillsCarousel()}
+        </div>
 
       {/* my experience */}
-      <section className="w-full flex flex-col justify-center items-center">
+      <section className={` ${darkMode? 'bg-lightFourth':'bg-darkFourth'} w-full flex flex-col justify-center items-center`}>
         {experience()}
-        {education()}
+        
+      </section>
+      <section className="w-full flex flex-col justify-center items-center">
+      {education()}
       </section>
     </div>
   );

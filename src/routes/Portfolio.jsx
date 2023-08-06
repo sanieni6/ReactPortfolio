@@ -50,7 +50,7 @@ const Portfolio = () => {
         });
     };
     return (
-        <div className="w-full flex flex-col justify-center items-center mheader">
+        <div className="w-full flex flex-col justify-center items-center mheader py-7">
         <div>
             <h2 className={`${darkMode? 'text-lightText':'text-darkText'} text-3xl mb-5`}>{currentLanguage.projects.title}</h2>
         </div>

@@ -19,7 +19,7 @@ const Home = () => {
     );
 
     const valuableCarussel = () => (
-        <div className='w-full flex flex-row justify-center gap-7 my-6 px-7'>
+        <div className={`w-full flex flex-row justify-center gap-7 my-6 px-7`}>
             {Object.keys(currentLanguage.home.carusel).map((key) => (
                 <div key={key} className= {`border-solid border ${darkMode? 'border-lightSecond':'border-darkSecond'} p-2 w-1/6 rounded-tr-lg` }>
                     <h3 className={`${darkMode? 'text-lightText':'text-darkText'} text-2xl mb-2`}>{currentLanguage.home.carusel[key].amount}</h3>

@@ -18,13 +18,13 @@ const Header = () => {
     };
 
     useEffect(() => {
-            document.body.style.backgroundColor = darkMode? '#dedede':'#000';
+            document.body.style.backgroundColor = darkMode? '#fff':'#000';
     }, [darkMode]);
 
 
     
     return (
-        <header className={`flex flex-row justify-between w-full ${darkMode? 'bg-lightMain':'bg-darkThird'} p-5 fixed top-0 left-0 z-10`} >
+        <header className={`flex flex-row justify-between w-full ${darkMode? 'bg-white':'bg-darkThird'} p-5 fixed top-0 left-0 z-10 border-b rounded-b-sm border-solid border-opacity-75`} >
             <h1 className={`${darkMode? 'text-lightText':'text-darkText'}`}>&lt; Luis Sanchez /&gt;</h1>
             <nav className='flex'>
                 <ul className='flex flex-row gap-4'>
