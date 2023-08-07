@@ -3,6 +3,9 @@ import { useEffect } from 'react';
 import { useSelector, useDispatch,} from 'react-redux';
 import { toggleMode } from '../redux/slices/modeSlice';
 import { toggleLanguage } from '../redux/slices/languagesSlice';
+import sun from "../images/sun.svg";
+import moon from "../images/moon.svg";
+import logo from "../images/cr2.svg";
 
 const Header = () => {
     const { darkMode } = useSelector((store) => store.mode);
@@ -24,10 +27,10 @@ const Header = () => {
 
     
     return (
-        <header className={`flex flex-row justify-between w-full ${darkMode? 'bg-white':'bg-darkThird'} p-5 fixed top-0 left-0 z-10 border-b rounded-b-sm border-solid border-opacity-75`} >
-            <h1 className={`${darkMode? 'text-lightText':'text-darkText'}`}>&lt; Luis Sanchez /&gt;</h1>
+        <header className={`flex flex-row justify-between w-full ${darkMode? 'bg-white':'bg-darkThird'} px-5 py-3 fixed top-0 left-0 z-10 ${darkMode? 'border-b':''} rounded-b-sm border-solid border-opacity-75 items-center`} >
+            <img src={logo}  className={`${darkMode? 'text-lightText':'text-darkText'} ${darkMode? '':'invert-colors'} w-32 h-9`} />
             <nav className='flex'>
-                <ul className='flex flex-row gap-4'>
+                <ul className='flex flex-row gap-4 items-center'>
                     <li>
                         <NavLink to="/" className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.header.home}</NavLink>
                     </li>
@@ -48,13 +51,20 @@ const Header = () => {
                     </li>
                     <li>
                         <button onClick={handleClick} className={`${darkMode? 'text-lightText':'text-darkText'}`}>
-                            {darkMode? currentLanguage.header.dark : currentLanguage.header.light}
+                            <img src={darkMode? moon : sun} alt="dark mode" className={` ${darkMode? '':'invert-colors'} w-7 h-7`}/>
                         </button>
                     </li>
-                    <li>
-                        <button onClick={handleLanguage} className={`${darkMode? 'text-lightText':'text-darkText'}`}>
-                            {language === 'en' ? 'es' : 'en'}
-                        </button>
+                    <li className='h-min'>
+                        <select name="" id=""
+                        value={language}
+                        onChange={handleLanguage}
+                        className={`${darkMode ? 'text-lightText' : 'text-darkText'} ${darkMode ? 'bg-darkText' : 'bg-darkThird'}`}
+                        >
+                            <option value="en">
+                                <img src="" alt="" />
+                                English</option>
+                            <option value="es">Español</option>
+                        </select>
                     </li>
                 </ul>
 
