@@ -72,11 +72,8 @@
         "about": {
             "whoAmI": {
                 "title": "Know Who I`m",
-                "second": "Hi, I`m Luis Sanchez, a full stack web developer and telematics engineer.",
-                "third" : "I`m a passionate about technology and I love to learn new things.",
-                "fouth":"I`m a self-taught person, I like to learn by myself and I`m always looking for new challenges.",
-                "fifth":"I`m a person who likes to work in a team and I`m always looking for new ways to improve my skills.",
-                "sixth":"Apart from coding, some other activities that I love to do!",
+                "second": "Hello there, I'm Luis Sanchez, a dedicated full-stack web developer and telematics engineer. My enthusiasm for technology knows no bounds, and I'm perpetually driven to explore new horizons of knowledge. Being self-taught, I find immense joy in my independent learning journey, consistently seeking fresh challenges to conquer. ",
+                "third" : "Collaboration is my forte, as I thrive in team environments and constantly seek avenues to enhance my skill set. Beyond coding, I find great delight in engaging in various other activities that bring me joy!",
                 "hobbie1":"Reading",
                 "hobbie2":"Calistenics",
                 "hobbie3":"Data Science",

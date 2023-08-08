@@ -4,27 +4,15 @@ import portrait from "../images/portrait2.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import water from "../images/water.svg";
+import calisthenics from "../images/weightlifting.svg";
+import reading from "../images/reading-books.svg";
+import movie from "../images/movie-film.svg";
+import data from "../images/data-science.svg";
 
 const About = () => {
   const { darkMode } = useSelector((store) => store.mode);
   const { currentLanguage } = useSelector((store) => store.languages);
-
-  const pointer = () => (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth={1.5}
-      stroke="currentColor"
-      className="w-6 h-6"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"
-      />
-    </svg>
-  );
 
   const skillSections = (skills) => (
     <div className="flex flex-col items-center">
@@ -182,7 +170,7 @@ const About = () => {
 
   const education = () => {
     return (
-      <div className="w-3/4 flex flex-col justify-center items-center">
+      <div className=" w-full md:w-3/4 flex flex-col justify-center items-center">
         <div className="w-3/4 flex flex-col justify-center">
         <h2
           className={`${
@@ -203,29 +191,29 @@ const About = () => {
             <div key={key} className={`${
               darkMode ? "bg-lightThird" : "bg-darkThird"
             } mb-7 flex gap-2 w-5/6`}>
-                <div className="">
-                <img src={currentLanguage.about.education.list[key].image} alt={currentLanguage.about.education.list[key].institution} className="w-28 h-full" />
+                <div className="w-2/4 md:w-auto">
+                <img src={currentLanguage.about.education.list[key].image} alt={currentLanguage.about.education.list[key].institution} className="w-full md:w-28 h-full" />
                 </div>
                 
-                <div className="p-2 mr-4">
+                <div className="p-2 mr-4 w-2/4 md:w-4/5">
               <p
                 className={`${
                   darkMode ? "text-darkText" : "text-darkText"
-                } text-left text-3xl`}
+                } text-left text-xl md:text-3xl`}
               >
                 {currentLanguage.about.education.list[key].grade}
               </p>
               <p
                 className={`${
                   darkMode ? "text-darkText" : "text-darkText"
-                } text-left text-xl`}
+                } text-left text-lg md:text-xl`}
               >
                 {currentLanguage.about.education.list[key].institution}
               </p>
               <p
                 className={`${
                   darkMode ? "text-darkText" : "text-darkText"
-                } text-left text-lg`}
+                } text-left text-sm md:text-lg`}
               >
                 {currentLanguage.about.education.list[key].startDate} - {currentLanguage.about.education.list[key].endDate}
               </p>
@@ -239,12 +227,12 @@ const About = () => {
 
   return (
     <div className="w-full mheader">
-      <div id="main" className="flex flex-row w-full justify-between  my-7 h-max py-4">
+      <div id="main" className="flex flex-row w-full md:justify-between  md:my-7 h-max py-4">
         {/* who am i? */}
-        <div className="flex flex-col items-start ml-7">
+        <div className="flex flex-col items-start px-5 md:ml-7 md:p-0 md:w-2/4">
           <h2
             className={`${
-              darkMode ? "text-lightSecond" : "text-darkSecond"
+              darkMode ? "text-lightFourth" : "text-darkSecond"
             } text-left text-4xl`}
           >
             {currentLanguage.about.whoAmI.title}
@@ -263,70 +251,50 @@ const About = () => {
           >
             {currentLanguage.about.whoAmI.third}
           </p>
-          <p
-            className={`${
-              darkMode ? "text-lightText" : "text-darkText"
-            } text-left`}
-          >
-            {currentLanguage.about.whoAmI.fouth}
-          </p>
-          <p
-            className={`${
-              darkMode ? "text-lightText" : "text-darkText"
-            } text-left`}
-          >
-            {currentLanguage.about.whoAmI.fifth}
-          </p>
-          <p
-            className={`${
-              darkMode ? "text-lightText" : "text-darkText"
-            } text-left`}
-          >
-            {currentLanguage.about.whoAmI.sixth}
-          </p>
-          <div>
+          <div className="flex flex-col gap-2 mt-2">
             <p
               className={`${
                 darkMode ? "text-lightText" : "text-darkText"
-              } text-left flex`}
+              } text-left flex centered content-center`}
             >
-              {pointer()} {currentLanguage.about.whoAmI.hobbie1}
+              <img src={reading} alt="reading" className="w-7 h-7" /> {currentLanguage.about.whoAmI.hobbie1}
             </p>
             <p
               className={`${
                 darkMode ? "text-lightText" : "text-darkText"
               } text-left flex`}
             >
-              {pointer()} {currentLanguage.about.whoAmI.hobbie2}
+              <img src={calisthenics} alt="calisthenics" className="w-7 h-7" /> {currentLanguage.about.whoAmI.hobbie2}
             </p>
             <p
               className={`${
                 darkMode ? "text-lightText" : "text-darkText"
               } text-left flex`}
             >
-              {pointer()} {currentLanguage.about.whoAmI.hobbie3}
+              <img src={data} alt="data" className="w-7 h-7" /> {currentLanguage.about.whoAmI.hobbie3}
             </p>
             <p
               className={`${
                 darkMode ? "text-lightText" : "text-darkText"
               } text-left flex`}
             >
-              {pointer()} {currentLanguage.about.whoAmI.hobbie4}{" "}
+              <img src={movie} alt="movie" className="w-7 h-7" /> {currentLanguage.about.whoAmI.hobbie4}
             </p>
           </div>
           {/* quote */}
-          <div>
-            <p className={`${darkMode ? "text-lightText" : "text-darkText"}`}>
+          <div className="flex flex-col items-center place-self-center">
+          <img src={portrait} alt="Luis Sanchez" className="flex md:hidden" />
+            <p className={`${darkMode ? "text-lightText" : "text-darkText"} quote-text text-xl`}>
               {currentLanguage.about.whoAmI.quote}
             </p>
-            <p className={`${darkMode ? "text-lightText" : "text-darkText"}`}>
+            <p className={`${darkMode ? "text-lightText" : "text-darkText"} quote-text`}>
               {currentLanguage.about.whoAmI.author}
             </p>
           </div>
         </div>
         {/* image */}
         <div>
-          <img src={portrait} alt="Luis Sanchez" />
+          <img src={portrait} alt="Luis Sanchez" className="hidden md:flex" />
         </div>
       </div>
       {/* skills */}

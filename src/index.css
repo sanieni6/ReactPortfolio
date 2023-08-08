@@ -50,3 +50,11 @@
 .projects-transition:hover {
   transform: scale(1.05);
 }
+
+.centered {
+  text-align: center;
+}
+
+.quote-text {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

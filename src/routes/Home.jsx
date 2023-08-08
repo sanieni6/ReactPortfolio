@@ -19,9 +19,9 @@ const Home = () => {
     );
 
     const valuableCarussel = () => (
-        <div className={`w-full flex flex-col items-center md:flex-row justify-center gap-7 my-6 px-7`}>
+        <div className={`w-full flex flex-col items-center md:items-stretch md:flex-row justify-center gap-7 my-6 px-7`}>
             {Object.keys(currentLanguage.home.carusel).map((key) => (
-                <div key={key} className= {`border-solid border ${darkMode? 'border-lightSecond':'border-darkSecond'} p-2 w-3/6 md:w-1/6 rounded-tr-lg` }>
+                <div key={key} className= {`border-solid border ${darkMode? 'border-lightSecond':'border-darkSecond'} p-2 w-3/6 md:w-1/6 rounded-tr-lg md:h-full` }>
                     <h3 className={`${darkMode? 'text-lightText':'text-darkText'} text-2xl mb-2`}>{currentLanguage.home.carusel[key].amount}</h3>
                     <p className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.home.carusel[key].title}</p>
                     </div>
@@ -35,9 +35,9 @@ const Home = () => {
                 <p className={`${darkMode? 'text-lightSecond':'text-darkSecond'} `}>{currentLanguage.home.featureTitle}</p>
                 <h2 className={`${darkMode? 'text-lightText':'text-darkText'} text-4xl`}>{currentLanguage.home.featureSub}</h2>
             </div>
-            <div className='flex flex-row gap-7 my-6 w-full justify-center '>
+            <div className='flex flex-col md:flex-row gap-7 my-6 w-full justify-center items-center md:items-stretch '>
                 {Object.keys(currentLanguage.home.features).map((key) => (
-                    <div key={key} className={`border-solid border w-1/4 p-9 rounded-tr-lg rounded-bl-lg ${darkMode? 'border-lightSecond':'border-darkSecond'} projects-transition`}>
+                    <div key={key} className={`border-solid border w-3/4 md:w-1/4 p-9 rounded-tr-lg rounded-bl-lg ${darkMode? 'border-lightSecond':'border-darkSecond'} projects-transition`}>
                         <h3 className={`${darkMode? 'text-lightText':'text-darkText'} text-2xl mb-2`}>{currentLanguage.home.features[key].title}</h3>
                         <p className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.home.features[key].description}</p>
                         </div>
@@ -71,7 +71,7 @@ const Home = () => {
 
             {/* have you a project on mind */}
             <div className='flex justify-center my-7'>
-                <div className='rounded-full border-solid border w-72 h-72 self-center flex flex-col items-center justify-center p-7'>
+                <div className={`rounded-full border-solid border w-72 h-72 self-center flex flex-col items-center justify-center p-7 ${darkMode? 'border-lightSecond':'border-darkSecond'}`}>
                     <h2 className={`${darkMode? 'text-lightText':'text-darkText text-lg'}`}>{currentLanguage.home.proyectMind}</h2>
                     <p className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.home.projectSub}</p>
                     <p className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.home.contact}</p>

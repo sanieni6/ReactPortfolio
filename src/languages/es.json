@@ -72,11 +72,8 @@
     "about": {
         "whoAmI": {
             "title": "Conoce quien soy",
-            "second": "Hola, Soy Luis Sanchez un desarrollador full stack e ingeniero en telematica",
-            "third" : "Soy una persona apasionada por la tecnologia y amo aprender cosas nuevas, me gusta trabajar en equipo y siempre estoy buscando nuevas formas de mejorar mis habilidades.",
-            "fouth":"Como autodidacta, me gusta aprender por mi cuenta y siempre estoy en busqueda de nuevos retos",
-            "fifth":"Me gusta trabajar en equipo y siempre estoy buscando nuevas formas de mejorar mis habilidades",
-            "sixth":"Aparte de la programacion, otras actividades que me amo hacer son:",
+            "second": "¡Hola! Soy Luis Sánchez, un apasionado desarrollador web full-stack e ingeniero telemático. Mi entusiasmo por la tecnología no tiene límites y siempre estoy ansioso por aprender cosas nuevas. Me considero autodidacta y disfruto mucho de mi proceso de aprendizaje independiente, siempre en busca de nuevos desafíos para superar.",
+            "third" : "La colaboración es mi fuerte, ya que me desenvuelvo muy bien en entornos de equipo y estoy constantemente buscando formas de mejorar mis habilidades. Más allá de la programación, ¡disfruto mucho participando en diversas actividades que me llenan de alegría!",
             "hobbie1":"Leer",
             "hobbie2":"Calistenia",
             "hobbie3":"Ciencia de datos",

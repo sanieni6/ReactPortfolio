@@ -10,6 +10,15 @@ const Footer = () => {
     const { darkMode } = useSelector((store) => store.mode);
     const { currentLanguage } = useSelector((store) => store.languages);
 
+    const socialLinks = () => (
+        <div className='flex gap-3'>
+            <a href='https://www.facebook.com/' className= {`w-5 h-5`}><img src={facebook} className= {`${darkMode? 'invert-colors':'invert-colors'} w-5 h-5`} alt="facebook" /></a>
+            <a href='https://github.com/sanieni6' className= {`w-5 h-5`}><img src={github} className= {`${darkMode? 'invert-colors':'invert-colors'} w-5 h-5`} alt="github" /></a>
+            <a href='https://www.linkedin.com/in/luissanchezz3/' className= {`w-5 h-5`}><img src={linkedin} className= {`${darkMode? 'invert-colors':'invert-colors'} w-5 h-5`} alt="linkedin" /></a>
+            <a href='https://medium.com/@luissanchezzamora23' className= {`w-5 h-5`}><img src={medium} className= {`${darkMode? 'invert-colors':'invert-colors'} w-5 h-5`} alt="medium" /></a>
+            </div>
+    );
+
     const socialMedia = () => (
         <div className='w-1/4 flex flex-col items-start gap-3'>
             <h2 className={`${darkMode? 'text-darkText':'text-darkText'} text-2xl`}>{currentLanguage.footer.contactInfo}</h2>
@@ -18,17 +27,12 @@ const Footer = () => {
                 {/* <p className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.contact.address}</p> */}
                 <p className={`${darkMode? 'text-darkText':'text-darkText'}`}>{currentLanguage.footer.site}</p>
             </div>
-            <div className='flex gap-3'>
-            <a href='https://www.facebook.com/' className= {`w-5 h-5`}><img src={facebook} className= {`${darkMode? 'invert-colors':'invert-colors'} w-5 h-5`} alt="facebook" /></a>
-            <a href='https://github.com/sanieni6' className= {`w-5 h-5`}><img src={github} className= {`${darkMode? 'invert-colors':'invert-colors'} w-5 h-5`} alt="github" /></a>
-            <a href='https://www.linkedin.com/in/luissanchezz3/' className= {`w-5 h-5`}><img src={linkedin} className= {`${darkMode? 'invert-colors':'invert-colors'} w-5 h-5`} alt="linkedin" /></a>
-            <a href='https://medium.com/@luissanchezzamora23' className= {`w-5 h-5`}><img src={medium} className= {`${darkMode? 'invert-colors':'invert-colors'} w-5 h-5`} alt="medium" /></a>
-            </div>
+            {socialLinks()}
         </div>
     );
     return (
         <footer className={`flex flex-row justify-between w-full ${darkMode? 'bg-lightThird':'bg-darkThird'} w-full flex flex-col pt-7 pb-3`}>
-            <div className='w-full flex flex-row justify-between items-start px-5'>
+            <div className='w-full hidden md:flex flex-row justify-between items-start pr-5 pl-28'>
                     <div className='w-1/4 flex flex-col items-start gap-3'>
                         <h2 className={`${darkMode? 'text-darkText':'text-darkText'} text-2xl`}>{currentLanguage.footer.portfolio}</h2>
                         <h3 className={`${darkMode? 'text-darkText':'text-darkText'} text-left`}>{currentLanguage.footer.description}</h3>
@@ -59,8 +63,9 @@ const Footer = () => {
             </div>
                 {socialMedia()}
                 </div>
-                <hr className={`${darkMode? 'text-darkText':'text-darkText'} w-3/4 self-center mt-3 mb-1`}/>
-            <div className='w-full'>
+                <hr className={`${darkMode? 'text-darkText':'text-darkText'} hidden md:flex w-3/4 self-center mt-3 mb-1`}/>
+            <div className='w-full flex flex-col items-center'>
+                {screen.width <768 ? socialLinks(): null}
                 <p className={`${darkMode? 'text-darkText':'text-darkText text-lg'}`}>{currentLanguage.footer.rights}</p>
             </div>
 
