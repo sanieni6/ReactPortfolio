@@ -33,8 +33,8 @@ const Portfolio = () => {
         }
         return Object.values(projects).map((project,index) => {
             return (
-                <div key={index} className={`w-1/4 flex flex-col gap-3 relative justify-between items-center border ${darkMode? 'border-lightSecond':'border-darkSecond'} py-4 px-4 rounded`}>
-                    <div className="w-full h-max flex flex-col gap-3 ">
+                <div key={index} className={`projects-transition w-1/4 flex flex-col gap-3 relative justify-between items-center border ${darkMode? 'border-lightSecond':'border-darkSecond'} py-4 px-4 rounded`}>
+                    <div className="w-full h-max flex flex-col gap-3">
                     <img src={project.image} alt={project.name} className="w-full h-44"/>
                     <div>
                     <p className={`${darkMode? 'text-lightText':'text-darkText'} text-2xl`}>{project.title}</p>

@@ -37,7 +37,7 @@ const Home = () => {
             </div>
             <div className='flex flex-row gap-7 my-6 w-full justify-center '>
                 {Object.keys(currentLanguage.home.features).map((key) => (
-                    <div key={key} className={`border-solid border w-1/4 p-9 rounded-tr-lg rounded-bl-lg ${darkMode? 'border-lightSecond':'border-darkSecond'}`}>
+                    <div key={key} className={`border-solid border w-1/4 p-9 rounded-tr-lg rounded-bl-lg ${darkMode? 'border-lightSecond':'border-darkSecond'} projects-transition`}>
                         <h3 className={`${darkMode? 'text-lightText':'text-darkText'} text-2xl mb-2`}>{currentLanguage.home.features[key].title}</h3>
                         <p className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.home.features[key].description}</p>
                         </div>
