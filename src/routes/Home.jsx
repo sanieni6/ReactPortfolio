@@ -10,18 +10,18 @@ const Home = () => {
     const { currentLanguage } = useSelector((store) => store.languages);
 
     const socialMedia = () => (
-        <div className='flex flex-col gap-2'>
-            <a href='https://www.facebook.com/' className= {`w-5 h-5`}><img src={facebook} className= {`${darkMode? '':'invert-colors'} w-5 h-5`} alt="facebook" /></a>
-            <a href='https://github.com/sanieni6' className= {`w-5 h-5`}><img src={github} className= {`${darkMode? '':'invert-colors'} w-5 h-5`} alt="github" /></a>
-            <a href='https://www.linkedin.com/in/luissanchezz3/' className= {`w-5 h-5`}><img src={linkedin} className= {`${darkMode? '':'invert-colors'} w-5 h-5`} alt="linkedin" /></a>
-            <a href='https://medium.com/@luissanchezzamora23' className= {`w-5 h-5`}><img src={medium} className= {`${darkMode? '':'invert-colors'} w-5 h-5`} alt="medium" /></a>
+        <div className='flex justify-center md:flex-col gap-2'>
+            <a href='https://www.facebook.com/' className= {`w-8 h-8 md:w-5 md:h-5`}><img src={facebook} className= {`${darkMode? '':'invert-colors'} w-8 h-8 md:w-5 md:h-5`} alt="facebook" /></a>
+            <a href='https://github.com/sanieni6' className= {`w-8 h-8 md:w-5 md:h-5`}><img src={github} className= {`${darkMode? '':'invert-colors'} w-8 h-8 md:w-5 md:h-5`} alt="github" /></a>
+            <a href='https://www.linkedin.com/in/luissanchezz3/' className= {`w-8 h-8 md:w-5 md:h-5`}><img src={linkedin} className= {`${darkMode? '':'invert-colors'} w-8 h-8 md:w-5 md:h-5`} alt="linkedin" /></a>
+            <a href='https://medium.com/@luissanchezzamora23' className= {`w-8 h-8 md:w-5 md:h-5`}><img src={medium} className= {`${darkMode? '':'invert-colors'} w-8 h-8 md:w-5 md:h-5`} alt="medium" /></a>
         </div>
     );
 
     const valuableCarussel = () => (
-        <div className={`w-full flex flex-row justify-center gap-7 my-6 px-7`}>
+        <div className={`w-full flex flex-col items-center md:flex-row justify-center gap-7 my-6 px-7`}>
             {Object.keys(currentLanguage.home.carusel).map((key) => (
-                <div key={key} className= {`border-solid border ${darkMode? 'border-lightSecond':'border-darkSecond'} p-2 w-1/6 rounded-tr-lg` }>
+                <div key={key} className= {`border-solid border ${darkMode? 'border-lightSecond':'border-darkSecond'} p-2 w-3/6 md:w-1/6 rounded-tr-lg` }>
                     <h3 className={`${darkMode? 'text-lightText':'text-darkText'} text-2xl mb-2`}>{currentLanguage.home.carusel[key].amount}</h3>
                     <p className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.home.carusel[key].title}</p>
                     </div>
@@ -49,17 +49,17 @@ const Home = () => {
 
     return (
         <div className='w-full mheader' >
-            <div className='flex flex-row w-full justify-between  my-7 h-max py-4 px-7'>
-                <div className='w-2/4 flex flex-col gap-2'>
-                    <p className={`${darkMode? 'text-lightText':'text-darkText'} ${darkMode? 'bg-lightSecond':'bg-darkSecond'} w-max rounded p-2`}>{currentLanguage.home.firstSub}</p>
+            <div className='flex flex-col items-center md:items-start md:flex-row w-full md:justify-between  md:my-7 md:h-max md:py-4 md:px-7'>
+                <div className='w-3/4 md:w-2/4 flex flex-col gap-2 mb-4 md:mb-0'>
+                    <p className={`${darkMode? 'text-lightText':'text-darkText'} ${darkMode? 'bg-lightSecond':'bg-darkSecond'}  hidden md:flex md:w-max md:rounded md:p-2`}>{currentLanguage.home.firstSub}</p>
                     <h1 className={`${darkMode? 'text-lightText':'text-darkText'} text-4xl`}>{currentLanguage.home.mainTitle}</h1>
                     <p className={`${darkMode? 'text-lightText':'text-darkText'} text-xl`}>{currentLanguage.home.secondSub}</p>
                 </div>
                 <div>
-                    <img src={portrait} alt="Luis Sanchez" />
+                    <img src={portrait} alt="Luis Sanchez" className='hidden md:flex' />
                 </div>
                 <div className='mr-3'>
-                    <p className={`${darkMode? 'text-lightText':'text-darkText'} vertical-text mb-3`}>{currentLanguage.home.followMe}</p>
+                    <p className={`${darkMode? 'text-lightText':'text-darkText'} hidden md:flex vertical-text mb-3`}>{currentLanguage.home.followMe}</p>
                     {socialMedia()}
                 </div>
             </div>

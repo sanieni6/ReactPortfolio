@@ -1,17 +1,25 @@
 import { NavLink } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useSelector, useDispatch,} from 'react-redux';
 import { toggleMode } from '../redux/slices/modeSlice';
 import { toggleLanguage } from '../redux/slices/languagesSlice';
 import sun from "../images/sun.svg";
 import moon from "../images/moon.svg";
 import logo from "../images/cr2.svg";
+import menu from "../images/menu.svg";
 import '../index.css';
+import close from "../images/close.svg";
 
 const Header = () => {
     const { darkMode } = useSelector((store) => store.mode);
     const { language, currentLanguage } = useSelector((store) => store.languages);
     const dispatch = useDispatch();
+
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const handleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
 
     const handleClick = () => {
         dispatch(toggleMode());
@@ -28,10 +36,13 @@ const Header = () => {
 
     
     return (
-        <header className={`flex flex-row justify-between w-full ${darkMode? 'bg-white':'bg-darkThird'} px-5 py-3 fixed top-0 left-0 z-10 ${darkMode? 'border-b':''} rounded-b-sm border-solid border-opacity-75 items-center`} >
-            <img src={logo}  className={`${darkMode? 'text-lightText':'text-darkText'} ${darkMode? '':'invert-colors'} w-32 h-9`} />
-            <nav className='flex'>
-                <ul className='flex flex-row gap-4 items-center'>
+        <header className={`  flex  ${menuOpen? 'h-full flex-col items-end' : 'flex-row'} justify-between w-full ${darkMode? 'bg-white':'bg-darkThird'} md:px-5 md:py-3 fixed top-0 left-0 z-10 ${darkMode? 'border-b':''} rounded-b-sm border-solid border-opacity-75 md:items-center`} >
+            <img src={logo}  className={` ${menuOpen? 'hidden' : ''} ${darkMode? 'text-lightText':'text-darkText'} ${darkMode? '':'invert-colors'} w-32 h-9`} />
+            <button className={` w-10 h-10 md:hidden`}  onClick={handleMenu}
+            ><img src={menuOpen? close : menu} alt="menu" className='w-10 h-10'/></button>
+            <nav className={`${menuOpen? 'flex  w-full h-full p-0 m-0' : 'hidden'} md:flex`}
+            >
+                <ul className={`flex flex-col ${menuOpen? 'w-full gap-4' : ''}  md:flex-row md:gap-4 md:items-center`}>
                     <li>
                         <NavLink to="/" className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.header.home}</NavLink>
                     </li>
@@ -69,9 +80,7 @@ const Header = () => {
                         onChange={handleLanguage}
                         className={`${darkMode ? 'text-lightText' : 'text-darkText'} ${darkMode ? 'bg-darkText' : 'bg-darkThird'}`}
                         >
-                            <option value="en">
-                                <img src="" alt="" />
-                                English</option>
+                            <option value="en">English</option>
                             <option value="es">Español</option>
                         </select>
                     </li>
