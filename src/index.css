@@ -58,3 +58,14 @@
 .quote-text {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px); /* Desplazar hacia abajo para un efecto de entrada */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Duración y función de interpolación */
+}
+
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}

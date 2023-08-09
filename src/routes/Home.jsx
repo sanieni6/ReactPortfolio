@@ -4,6 +4,7 @@ import github from '../images/icons8-github.svg';
 import linkedin from '../images/icons8-linkedin.svg';
 import medium from '../images/medium.svg';
 import portrait from "../images/portrait2.png";
+import { useState, useEffect } from 'react';
 
 const Home = () => {
     const { darkMode } = useSelector((store) => store.mode);
@@ -18,16 +19,28 @@ const Home = () => {
         </div>
     );
 
-    const valuableCarussel = () => (
+    const ValuableCarussel = () =>{
+        const [visible, setVisible] = useState(false);
+
+        useEffect(() => {
+          const timer = setTimeout(() => {
+            setVisible(true);
+          }, 500);
+      
+          return () => {
+            clearTimeout(timer);
+          };
+        }, []);
+        return (
         <div className={`w-full flex flex-col items-center md:items-stretch md:flex-row justify-center gap-7 my-6 px-7`}>
-            {Object.keys(currentLanguage.home.carusel).map((key) => (
-                <div key={key} className= {`border-solid border ${darkMode? 'border-lightSecond':'border-darkSecond'} p-2 w-3/6 md:w-1/6 rounded-tr-lg md:h-full` }>
+            {Object.keys(currentLanguage.home.carusel).map((key, index) => (
+                <div key={key} className= {`border-solid border ${darkMode? 'border-lightSecond':'border-darkSecond'} p-2 w-3/6 md:w-1/6 rounded-tr-lg md:flex-grow fade-in ${visible ? 'active' : ''} ` }  style={{ transitionDelay: `${index * 0.1}s` }}>
                     <h3 className={`${darkMode? 'text-lightText':'text-darkText'} text-2xl mb-2`}>{currentLanguage.home.carusel[key].amount}</h3>
                     <p className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.home.carusel[key].title}</p>
                     </div>
             ))}
         </div>
-    );
+    )};
 
     const features = () => (
         <div className='w-full my-6 flex flex-col gap-2 px-7'>
@@ -65,7 +78,7 @@ const Home = () => {
             </div>
             
             {/* valuables carussel */}
-            {valuableCarussel()}
+            {ValuableCarussel()}
 
            {features()}
 

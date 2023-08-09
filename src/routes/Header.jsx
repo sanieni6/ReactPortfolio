@@ -36,10 +36,10 @@ const Header = () => {
 
     
     return (
-        <header className={`  flex  ${menuOpen? 'h-full flex-col items-end' : 'flex-row'} justify-between w-full ${darkMode? 'bg-white':'bg-darkThird'} md:px-5 md:py-3 fixed top-0 left-0 z-10 ${darkMode? 'border-b':''} rounded-b-sm border-solid border-opacity-75 md:items-center`} >
-            <img src={logo}  className={` ${menuOpen? 'hidden' : ''} ${darkMode? 'text-lightText':'text-darkText'} ${darkMode? '':'invert-colors'} w-32 h-9`} />
+        <header className={`  flex  ${menuOpen? 'h-full flex-col items-end' : 'flex-row'} justify-between w-full ${darkMode? 'bg-white':'bg-darkThird'} pr-3 md:px-5 md:py-3 fixed top-0 left-0 z-10 ${darkMode? 'border-b':''} rounded-b-sm border-solid border-opacity-75 md:items-center`} >
+            <a href="https://www.linkedin.com/in/luissanchezz3/" className={` ${menuOpen? 'hidden' : ''} w-32 h-9`}><img src={logo}  className={` ${menuOpen? 'hidden' : ''} ${darkMode? 'text-lightText':'text-darkText'} ${darkMode? '':'invert-colors'} w-32 h-9`} /></a>
             <button className={` w-10 h-10 md:hidden`}  onClick={handleMenu}
-            ><img src={menuOpen? close : menu} alt="menu" className='w-10 h-10'/></button>
+            ><img src={menuOpen? close : menu} alt="menu" className={`w-9 h-9 ${darkMode? '':'invert-colors'}`}/></button>
             <nav className={`${menuOpen? 'flex  w-full h-full p-0 m-0' : 'hidden'} md:flex`}
             >
                 <ul className={`flex flex-col ${menuOpen? 'w-full gap-4' : ''}  md:flex-row md:gap-4 md:items-center`}>

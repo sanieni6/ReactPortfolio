@@ -4,7 +4,6 @@ import portrait from "../images/portrait2.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import water from "../images/water.svg";
 import calisthenics from "../images/weightlifting.svg";
 import reading from "../images/reading-books.svg";
 import movie from "../images/movie-film.svg";
@@ -190,7 +189,7 @@ const About = () => {
           {Object.keys(currentLanguage.about.education.list).map((key) => (
             <div key={key} className={`${
               darkMode ? "bg-lightThird" : "bg-darkThird"
-            } mb-7 flex gap-2 w-5/6`}>
+            } mb-7 flex gap-2 w-5/6 projects-transition`}>
                 <div className="w-2/4 md:w-auto">
                 <img src={currentLanguage.about.education.list[key].image} alt={currentLanguage.about.education.list[key].institution} className="w-full md:w-28 h-full" />
                 </div>

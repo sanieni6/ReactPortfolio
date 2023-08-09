@@ -65,7 +65,9 @@ const Footer = () => {
                 </div>
                 <hr className={`${darkMode? 'text-darkText':'text-darkText'} hidden md:flex w-3/4 self-center mt-3 mb-1`}/>
             <div className='w-full flex flex-col items-center'>
-                {screen.width <768 ? socialLinks(): null}
+                <div className='flex md:hidden'>
+                    {socialLinks()}
+                </div>
                 <p className={`${darkMode? 'text-darkText':'text-darkText text-lg'}`}>{currentLanguage.footer.rights}</p>
             </div>
 

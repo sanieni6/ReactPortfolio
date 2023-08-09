@@ -55,12 +55,12 @@ const Portfolio = () => {
             <h2 className={`${darkMode? 'text-lightText':'text-darkText'} text-3xl mb-5`}>{currentLanguage.projects.title}</h2>
         </div>
         <div className="flex flex-row flex-wrap justify-center gap-5 w-3/4 md:w-1/4 mb-7">
-        <button onClick={() => toggleTag('all')} className={`${selectedTags.length === 0 ? 'bg-darkSecond' : ''} ${darkMode? 'text-lightText':'text-darkText'} border px-2 py-1 ${darkMode? 'border-lightSecond':'border-darkSecond'}`}>All</button>
+        <button onClick={() => toggleTag('all')} className={`${selectedTags.length === 0 ? 'bg-darkSecond' : ''} ${darkMode? 'text-lightText':'text-darkText'} border px-2 py-1 ${darkMode? 'border-lightSecond':'border-darkSecond'} hover:bg-red-700`}>All</button>
         {['Javascript', 'CSS', 'SASS', 'React', 'API', 'AXIOS', 'Redux', 'Bootstrap', 'Rails', 'Ruby'].map(tag => (
           <button
             key={tag}
             onClick={() => toggleTag(tag)}
-            className={`${selectedTags.includes(tag) ? 'bg-darkSecond' : ''} ${darkMode? 'text-lightText':'text-darkText'} border px-2 py-1 ${darkMode? 'border-lightSecond':'border-darkSecond'}`}
+            className={`${selectedTags.includes(tag) ? 'bg-darkSecond' : ''} ${darkMode? 'text-lightText':'text-darkText'} border px-2 py-1 ${darkMode? 'border-lightSecond':'border-darkSecond'} hover:bg-red-700`}
           >
             {tag}
           </button>
