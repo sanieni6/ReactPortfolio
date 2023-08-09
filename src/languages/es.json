@@ -197,10 +197,10 @@
                     "address" : "Guayas, Ecuador",
                     "year" : "2023",
                     "descrip" : [
-                        "- Developing and implementing several projects as a Full-stack developer to deliver exceptional web solutions",
-                        "- Collaborating with a remote, international team to create a real-time messaging application, resulting in a seamless communication experience for users across different time zones.",
-                        "- Implementing Agile methodologies to streamline project workflows, resulting in a 20% reduction in development time and on-time delivery of all projects.",
-                        "- Researching and integrating the latest technologies and frameworks, staying ahead of industry trends, and consistently delivering modern, high-performing applications."
+                        "- Desarrollo e implementación de varios proyectos como desarrollador Full-stack para ofrecer soluciones web excepcionales.",
+                        "- Colaboración con equipos remotos e internacionales para crear aplicaciónes de mensajería en tiempo real, lo que resulta en una experiencia de comunicación fluida para usuarios de diferentes zonas horarias.",
+                        "- implementación de metodologías Agile para optimizar los flujos de trabajo del proyecto, lo que resulta en una reducción del 20% en el tiempo de desarrollo y en la entrega puntual de todos los proyectos.",
+                        "- Investigación e integración de las últimas tecnologías y marcos de trabajo, manteniéndose al tanto de las tendencias de la industria y proporcionando de manera constante aplicaciones modernas y de alto rendimiento."
                     ]
                 },
                 "2" : {
@@ -211,9 +211,9 @@
                     "address" : "Quevedo, Ecuador",
                     "year" : "2022",
                     "descrip" :[
-                        "- Successfully developed and implemented Python scripts to automate tasks, resulting in a 50% reduction in manual effort and increased efficiency for clients.",
-                        "- Designed and built custom Python applications that improved workflow and productivity for end-users, resulting in a 97% satisfaction rate and positive feedback from clients.",
-                        "- Effectively debugged and tested Python code to ensure reliability and accuracy, resulting in a 95% decrease in errors and improved performance for end-users."
+                        "- Desarrollé e implementé con éxito scripts en Python para automatizar tareas, lo que resultó en una reducción del 50% en el esfuerzo manual y un aumento en la eficiencia para los clientes.",
+                        "- Diseñé y construí aplicaciones personalizadas en Python que mejoraron el flujo de trabajo y la productividad de los usuarios finales, lo que resultó en una tasa de satisfacción del 97% y comentarios positivos de los clientes.",
+                        "- Depuré y probé de manera efectiva el código en Python para garantizar confiabilidad y precisión, lo que resultó en una disminución del 95% en errores y un mejor rendimiento para los usuarios finales."
                     ]
                 },
                 "3" : {
@@ -224,15 +224,16 @@
                     "address" : "Quevedo, Ecuador",
                     "year" : "2021",
                     "descrip" : [
-                        "- Successfully provided technical support for network equipment and computers, resulting in a 95% decrease in downtime and increased productivity for the organization.",
-                        "- Led wireless network installations for several clients, resulting in a 100% satisfaction rate and increased revenue for the company.",
-                        "- Implemented a proactive maintenance program for radio link antennas, resulting in a 50% decrease in equipment failure and improved service quality for customers."
+                        "- Brindé con éxito soporte técnico para equipos de red y computadoras, lo que resultó en una disminución del 95% en el tiempo de inactividad y un aumento en la productividad para la organización.",
+                        "- Lideré instalaciones de redes inalámbricas para varios clientes, lo que resultó en una tasa de satisfacción del 100% y un aumento en los ingresos para la empresa.",
+                        "- Implementé un programa de mantenimiento proactivo para antenas de enlace de radio, lo que resultó en una disminución del 50% en las fallas de equipos y una mejora en la calidad del servicio para los clientes."
                     ]
                 }
             }
         },
         "education" : {
             "title" : "Educación",
+            "phrase" : "La educación no es el aprendizaje de hechos, sino el entrenamiento de la mente para pensar.",
             "list" : {
                 "1" : {
                     "institution" : "Microverse",
@@ -322,5 +323,6 @@
         "subjectInput" : "ASUNTO",
         "messageInput" : "TU MENSAJE",
         "sendBtn" : "ENVIAR MENSAJE"
-    }
+    },
+    "blog": "Sitio web en construcción"
 }

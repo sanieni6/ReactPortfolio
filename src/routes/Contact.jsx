@@ -12,10 +12,10 @@ const Contact = () => {
 
     const socialMedia = () => (
         <div className='flex gap-2'>
-            <a href='https://www.facebook.com/' className= {`w-5 h-5`}><img src={facebook} className= {`${darkMode? 'invert-colors':'invert-colors'} w-5 h-5`} alt="facebook" /></a>
-            <a href='https://github.com/sanieni6' className= {`w-5 h-5`}><img src={github} className= {`${darkMode? 'invert-colors':'invert-colors'} w-5 h-5`} alt="github" /></a>
-            <a href='https://www.linkedin.com/in/luissanchezz3/' className= {`w-5 h-5`}><img src={linkedin} className= {`${darkMode? 'invert-colors':'invert-colors'} w-5 h-5`} alt="linkedin" /></a>
-            <a href='https://medium.com/@luissanchezzamora23' className= {`w-5 h-5`}><img src={medium} className= {`${darkMode? 'invert-colors':'invert-colors'} w-5 h-5`} alt="medium" /></a>
+            <a href='https://www.facebook.com/' rel="noreferrer" target="_blank" className= {`w-5 h-5`}><img src={facebook} className= {`${darkMode? 'invert-colors':'invert-colors'} w-5 h-5`} alt="facebook" /></a>
+            <a href='https://github.com/sanieni6' rel="noreferrer" target="_blank" className= {`w-5 h-5`}><img src={github} className= {`${darkMode? 'invert-colors':'invert-colors'} w-5 h-5`} alt="github" /></a>
+            <a href='https://www.linkedin.com/in/luissanchezz3/' rel="noreferrer" target="_blank" className= {`w-5 h-5`}><img src={linkedin} className= {`${darkMode? 'invert-colors':'invert-colors'} w-5 h-5`} alt="linkedin" /></a>
+            <a href='https://medium.com/@luissanchezzamora23' rel="noreferrer" target="_blank" className= {`w-5 h-5`}><img src={medium} className= {`${darkMode? 'invert-colors':'invert-colors'} w-5 h-5`} alt="medium" /></a>
         </div>
     );
 

@@ -8,19 +8,65 @@ import calisthenics from "../images/weightlifting.svg";
 import reading from "../images/reading-books.svg";
 import movie from "../images/movie-film.svg";
 import data from "../images/data-science.svg";
+import javascript from "../images/javascript.svg";
+import react from "../images/react.svg";
+import redux from "../images/redux.svg";
+import git from "../images/git.svg";
+import html from "../images/html.svg";
+import postgre from "../images/postgresql.svg";
+import ruby from "../images/ruby.svg";
+import rails from "../images/rails.svg";
+import python from "../images/python.svg";
+import css from "../images/css.svg";
+import teamwork from "../images/teamwork.svg";
+import communication from "../images/comunication.png";
+import scrum from "../images/scrum.png";
+import remote from "../images/remotework.svg";
+import pair from "../images/pair.svg";
+import robotics from "../images/robotics.png";
+import micro from "../images/circuit.png";
+import ccna from "../images/routing.png";
 
 const About = () => {
   const { darkMode } = useSelector((store) => store.mode);
   const { currentLanguage } = useSelector((store) => store.languages);
 
-  const skillSections = (skills) => (
+  const skillImages = [
+    { icon: javascript, alt: "javascript" },
+    { icon: react, alt: "react" },
+    { icon: redux, alt: "redux" },
+    { icon: git, alt: "git" },
+    { icon: html, alt: "html" },
+    { icon: postgre, alt: "postgre" },
+    { icon: ruby, alt: "ruby" },
+    { icon: rails, alt: "rails" },
+    { icon: python, alt: "python" },
+    { icon: css, alt: "css" },
+  ];
+
+  const softSkillImages = [
+    { icon: teamwork, alt: "teamwork" },
+    { icon: communication, alt: "communication" },
+    { icon: scrum, alt: "scrum" },
+    { icon: remote, alt: "remote" },
+    { icon: pair, alt: "pair" },
+  ];
+
+  const otherSkillImages = [
+    { icon: robotics, alt: "robotics" },
+    { icon: micro, alt: "micro" },
+    { icon: ccna, alt: "ccna" },
+  ];
+
+
+  const skillSections = (skills, images) => (
     <div className="flex flex-col items-center">
       <div className="flex flex-wrap justify-center">
-        {Object.keys(skills.list).map((key) => (
+        {Object.keys(skills.list).map((key, index) => (
           <div key={key} className="w-1/4 p-2 flex flex-col items-center mx-2">
             <img
-              src={skills.list[key].icon}
-              alt={skills.list[key].alt}
+              src={images[index].icon}
+              alt={images[index].alt}
               className="w-16 h-16"
             />
             <p
@@ -38,9 +84,9 @@ const About = () => {
 
   const SkillsCarousel = () => {
     const skillsSet = [
-      skillSections(currentLanguage.about.skills),
-      skillSections(currentLanguage.about.softSkills),
-      skillSections(currentLanguage.about.otherSkills),
+      skillSections(currentLanguage.about.skills, skillImages),
+      skillSections(currentLanguage.about.softSkills, softSkillImages),
+      skillSections(currentLanguage.about.otherSkills, otherSkillImages),
     ];
 
     const sliderRef = useRef(null);
@@ -182,7 +228,7 @@ const About = () => {
         className={`${
             darkMode ? "text-lightText" : "text-darkText"
           } mb-7`}
-        >Education Is Not The Learning Of Facts, But The Training Of The Mind To Think.
+        >{currentLanguage.about.education.phrase}
         </p>
         </div>
         <div className="w-full flex flex-col gap-7 justify-center items-center">
@@ -254,28 +300,28 @@ const About = () => {
             <p
               className={`${
                 darkMode ? "text-lightText" : "text-darkText"
-              } text-left flex centered content-center`}
+              } text-left flex centered content-center gap-2`}
             >
               <img src={reading} alt="reading" className="w-7 h-7" /> {currentLanguage.about.whoAmI.hobbie1}
             </p>
             <p
               className={`${
                 darkMode ? "text-lightText" : "text-darkText"
-              } text-left flex`}
+              } text-left flex gap-2`}
             >
               <img src={calisthenics} alt="calisthenics" className="w-7 h-7" /> {currentLanguage.about.whoAmI.hobbie2}
             </p>
             <p
               className={`${
                 darkMode ? "text-lightText" : "text-darkText"
-              } text-left flex`}
+              } text-left flex gap-2`}
             >
               <img src={data} alt="data" className="w-7 h-7" /> {currentLanguage.about.whoAmI.hobbie3}
             </p>
             <p
               className={`${
                 darkMode ? "text-lightText" : "text-darkText"
-              } text-left flex`}
+              } text-left flex gap-2`}
             >
               <img src={movie} alt="movie" className="w-7 h-7" /> {currentLanguage.about.whoAmI.hobbie4}
             </p>

@@ -37,7 +37,7 @@ const Header = () => {
     
     return (
         <header className={`  flex  ${menuOpen? 'h-full flex-col items-end' : 'flex-row'} justify-between w-full ${darkMode? 'bg-white':'bg-darkThird'} pr-3 md:px-5 md:py-3 fixed top-0 left-0 z-10 ${darkMode? 'border-b':''} rounded-b-sm border-solid border-opacity-75 md:items-center`} >
-            <a href="https://www.linkedin.com/in/luissanchezz3/" className={` ${menuOpen? 'hidden' : ''} w-32 h-9`}><img src={logo}  className={` ${menuOpen? 'hidden' : ''} ${darkMode? 'text-lightText':'text-darkText'} ${darkMode? '':'invert-colors'} w-32 h-9`} /></a>
+            <a href="https://www.linkedin.com/in/luissanchezz3/" rel="noreferrer" target="_blank" className={` ${menuOpen? 'hidden' : ''} w-32 h-9`}><img src={logo}  className={` ${menuOpen? 'hidden' : ''} ${darkMode? 'text-lightText':'text-darkText'} ${darkMode? '':'invert-colors'} w-32 h-9`} /></a>
             <button className={` w-10 h-10 md:hidden`}  onClick={handleMenu}
             ><img src={menuOpen? close : menu} alt="menu" className={`w-9 h-9 ${darkMode? '':'invert-colors'}`}/></button>
             <nav className={`${menuOpen? 'flex  w-full h-full p-0 m-0' : 'hidden'} md:flex`}
@@ -67,10 +67,10 @@ const Header = () => {
                         <NavLink to="/Contact" className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.header.contact}</NavLink>
                     </li>
                     <li>
-                        <a href="https://docs.google.com/document/d/18wiUSsQHfWPmb2Ba24ylWVNkTu2uVvTIgD-eTbi7zLw/edit?usp=sharing" className={`${darkMode? 'text-lightText':'text-darkText'} border py-2 px-3 rounded ${darkMode? 'border-lightSecond':'border-darkSecond'} projects-transition hover:bg-red-700`}>{currentLanguage.header.resume}</a>
+                        <a href="https://docs.google.com/document/d/18wiUSsQHfWPmb2Ba24ylWVNkTu2uVvTIgD-eTbi7zLw/edit?usp=sharing" rel="noreferrer" target="_blank" className={`${darkMode? 'text-lightText':'text-darkText'} border py-2 px-3 rounded ${darkMode? 'border-lightSecond':'border-darkSecond'} projects-transition hover:bg-red-700`}>{currentLanguage.header.resume}</a>
                     </li>
                     <li>
-                        <button onClick={handleClick} className={`${darkMode? 'text-lightText':'text-darkText'}`}>
+                        <button onClick={handleClick} className={`${darkMode? 'text-lightText':'text-darkText'} md:flex md:items-center`}>
                             <img src={darkMode? moon : sun} alt="dark mode" className={` ${darkMode? '':'invert-colors'} w-7 h-7 hover:shadow-2xl`}/>
                         </button>
                     </li>
