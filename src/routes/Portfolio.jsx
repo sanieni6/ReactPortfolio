@@ -33,8 +33,8 @@ const Portfolio = () => {
         }
         return Object.values(projects).map((project,index) => {
             return (
-                <div key={index} className={`w-1/4 flex flex-col gap-3 relative justify-between items-center border ${darkMode? 'border-lightSecond':'border-darkSecond'} py-4 px-4 rounded`}>
-                    <div className="w-full h-max flex flex-col gap-3 ">
+                <div key={index} className={`projects-transition w-4/5 md:w-1/4 flex flex-col gap-3 relative justify-between items-center border ${darkMode? 'border-lightSecond':'border-darkSecond'} py-4 px-4 rounded`}>
+                    <div className="w-full h-max flex flex-col gap-3">
                     <img src={project.image} alt={project.name} className="w-full h-44"/>
                     <div>
                     <p className={`${darkMode? 'text-lightText':'text-darkText'} text-2xl`}>{project.title}</p>
@@ -50,23 +50,23 @@ const Portfolio = () => {
         });
     };
     return (
-        <div className="w-full flex flex-col justify-center items-center">
+        <div className="w-full flex flex-col justify-center items-center mheader py-7">
         <div>
             <h2 className={`${darkMode? 'text-lightText':'text-darkText'} text-3xl mb-5`}>{currentLanguage.projects.title}</h2>
         </div>
-        <div className="flex flex-row flex-wrap justify-center gap-5 w-1/4 mb-7">
-        <button onClick={() => toggleTag('all')} className={`${selectedTags.length === 0 ? 'bg-darkSecond' : ''} ${darkMode? 'text-lightText':'text-darkText'} border px-2 py-1 ${darkMode? 'border-lightSecond':'border-darkSecond'}`}>All</button>
+        <div className="flex flex-row flex-wrap justify-center gap-5 w-3/4 md:w-1/4 mb-7">
+        <button onClick={() => toggleTag('all')} className={`${selectedTags.length === 0 ? 'bg-darkSecond' : ''} ${darkMode? 'text-lightText':'text-darkText'} border px-2 py-1 ${darkMode? 'border-lightSecond':'border-darkSecond'} hover:bg-red-700`}>All</button>
         {['Javascript', 'CSS', 'SASS', 'React', 'API', 'AXIOS', 'Redux', 'Bootstrap', 'Rails', 'Ruby'].map(tag => (
           <button
             key={tag}
             onClick={() => toggleTag(tag)}
-            className={`${selectedTags.includes(tag) ? 'bg-darkSecond' : ''} ${darkMode? 'text-lightText':'text-darkText'} border px-2 py-1 ${darkMode? 'border-lightSecond':'border-darkSecond'}`}
+            className={`${selectedTags.includes(tag) ? 'bg-darkSecond' : ''} ${darkMode? 'text-lightText':'text-darkText'} border px-2 py-1 ${darkMode? 'border-lightSecond':'border-darkSecond'} hover:bg-red-700`}
           >
             {tag}
           </button>
         ))}
         </div>
-        <div className="w-10/12 flex flex-wrap gap-4 justify-center">
+        <div className="w-full flex flex-col md:flex-row md:flex-wrap gap-4 justify-center items-center md:items-stretch">
             {displayProjects()}
         </div>
         </div>

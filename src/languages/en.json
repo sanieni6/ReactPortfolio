@@ -7,12 +7,13 @@
             "services":"Services",
             "blog":"Blog",
             "dark":"Dark",
-            "light":"Light"
+            "light":"Light",
+            "resume" : "Resume"
         },
         "home":{
             "firstSub":"Welcome to my World",
             "mainTitle":"Hi, I`m Luis Sanchez a Full Stack Web Developer",
-            "secondSub":"I can help you build your project , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don`t hesitate to contact me.",
+            "secondSub":"I can help you build your project , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don`t hesitate to contact me.",
             "followMe": "Follow me •  •  • ",
             "carusel":{
                 "1":{
@@ -47,11 +48,11 @@
                 },
                 "2":{
                     "title": "Web Development",
-                    "description":"I can help you to create a business strategy to improve your business"
+                    "description":"I can help you to create a responsive full stack web application"
                 },
                 "3":{
                     "title": "Mobile Development",
-                    "description":"I can help you to create a business strategy to improve your business"
+                    "description":"I can help you to create a mobile first web application"
                 }
             },
             "proyectMind":"Do you have a project in mind?",
@@ -59,18 +60,21 @@
             "contact":"luissanchezzamora23@gmail.com"
         },
         "footer": {
+            "portfolio" : "Luis' Portfolio",
+            "description" : "Thank you for visiting my personal portfolio website. Connect with me over socials.",
+            "description2": "Keep Rising 🚀. Connect with me over live chat!",
+            "quickLinks": "Quick Links",
+            "contactInfo": "Contact Info",
+            "site" : "Guayaquil, Ecuador",
             "designed": "Designed and Developed by Luis Sanchez",
             "rights": "© 2023 Luis Sanchez. All rights reserved."
         },
         "about": {
             "whoAmI": {
                 "title": "Know Who I`m",
-                "second": "Hi, I`m Luis Sanchez, a full stack web developer and telematics engineer.",
-                "third" : "I`m a passionate about technology and I love to learn new things.",
-                "fouth":"I`m a self-taught person, I like to learn by myself and I`m always looking for new challenges.",
-                "fifth":"I`m a person who likes to work in a team and I`m always looking for new ways to improve my skills.",
-                "sixth":"Apart from coding, some other activities that I love to do!",
-                "hobbie1":"📚 Reading",
+                "second": "Hello there, I'm Luis Sanchez, a dedicated full-stack web developer and telematics engineer. My enthusiasm for technology knows no bounds, and I'm perpetually driven to explore new horizons of knowledge. Being self-taught, I find immense joy in my independent learning journey, consistently seeking fresh challenges to conquer. ",
+                "third" : "Collaboration is my forte, as I thrive in team environments and constantly seek avenues to enhance my skill set. Beyond coding, I find great delight in engaging in various other activities that bring me joy!",
+                "hobbie1":"Reading",
                 "hobbie2":"Calistenics",
                 "hobbie3":"Data Science",
                 "hobbie4":"Movies",
