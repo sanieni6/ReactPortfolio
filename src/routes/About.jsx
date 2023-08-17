@@ -60,7 +60,7 @@ const About = () => {
 
 
   const skillSections = (skills, images) => (
-    <div className="flex flex-col items-center">
+    <div  id="skills" className="flex flex-col items-center">
       <div className="flex flex-wrap justify-center">
         {Object.keys(skills.list).map((key, index) => (
           <div key={key} className="w-1/4 p-2 flex flex-col items-center mx-2">
@@ -272,7 +272,7 @@ const About = () => {
 
   return (
     <div className="w-full mheader">
-      <div id="main" className="flex flex-row w-full md:justify-between  md:my-7 h-max py-4">
+      <section id="main" className="flex flex-row w-full md:justify-between  md:my-7 h-max py-4">
         {/* who am i? */}
         <div className="flex flex-col items-start px-5 md:ml-7 md:p-0 md:w-2/4">
           <h2
@@ -341,7 +341,7 @@ const About = () => {
         <div>
           <img src={portrait} alt="Luis Sanchez" className="hidden md:flex" />
         </div>
-      </div>
+      </section>
       {/* skills */}
       <div className={`${darkMode? 'bg-lightFifth':'bg-darkFourth'} py-5`}>
         {SkillsCarousel()}

@@ -44,30 +44,22 @@ const Header = () => {
             >
                 <ul className={`flex flex-col ${menuOpen? 'w-full gap-4' : ''}  md:flex-row md:gap-4 md:items-center`}>
                     <li>
-                        <NavLink to="/" className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.header.home}</NavLink>
+                        <NavLink to="/" className={`${darkMode? 'text-lightText':'text-darkText'}`} onClick={menuOpen? handleMenu : null}>{currentLanguage.header.home}</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/About#main" className={`${darkMode? 'text-lightText':'text-darkText'}`} onClick={() => {
-    if (document.getElementById('main')) {
-        window.scrollTo({
-            top: document.getElementById('main').offsetTop,
-            left: 0,
-        });
-    }
-}}
-                        >{currentLanguage.header.about}</NavLink> 
+                        <NavLink to="/about#skills" className={`${darkMode? 'text-lightText':'text-darkText'}`} onClick={menuOpen? handleMenu : null}>{currentLanguage.header.about}</NavLink> 
                     </li>
                     <li>
-                        <NavLink to="/Portfolio" className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.header.portfolio}</NavLink>
+                        <NavLink to="/portfolio" className={`${darkMode? 'text-lightText':'text-darkText'}`} onClick={menuOpen? handleMenu : null}>{currentLanguage.header.portfolio}</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/Blog" className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.header.blog}</NavLink>
+                        <NavLink to="/blog" className={`${darkMode? 'text-lightText':'text-darkText'}`} onClick={menuOpen? handleMenu : null}>{currentLanguage.header.blog}</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/Contact" className={`${darkMode? 'text-lightText':'text-darkText'}`}>{currentLanguage.header.contact}</NavLink>
+                        <NavLink to="/contact" className={`${darkMode? 'text-lightText':'text-darkText'}`} onClick={menuOpen? handleMenu : null}>{currentLanguage.header.contact}</NavLink>
                     </li>
                     <li>
-                        <a href="https://docs.google.com/document/d/18wiUSsQHfWPmb2Ba24ylWVNkTu2uVvTIgD-eTbi7zLw/edit?usp=sharing" rel="noreferrer" target="_blank" className={`${darkMode? 'text-lightText':'text-darkText'} border py-2 px-3 rounded ${darkMode? 'border-lightSecond':'border-darkSecond'} projects-transition hover:bg-red-700`}>{currentLanguage.header.resume}</a>
+                        <a href="https://docs.google.com/document/d/18wiUSsQHfWPmb2Ba24ylWVNkTu2uVvTIgD-eTbi7zLw/edit?usp=sharing" rel="noreferrer" target="_blank" className={`${darkMode? 'text-lightText':'text-darkText'} border py-2 px-3 rounded ${darkMode? 'border-lightSecond':'border-darkSecond'} projects-transition hover:bg-red-700`} onClick={menuOpen? handleMenu : null}>{currentLanguage.header.resume}</a>
                     </li>
                     <li>
                         <button onClick={handleClick} className={`${darkMode? 'text-lightText':'text-darkText'} md:flex md:items-center`}>
