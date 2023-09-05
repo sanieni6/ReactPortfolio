@@ -234,6 +234,7 @@
             },
             "education" : {
                 "title" : "Education",
+                "phrase" : "Education Is Not The Learning Of Facts, But The Training Of The Mind To Think.",
                 "list" : {
                     "1" : {
                         "institution" : "Microverse",
@@ -323,5 +324,6 @@
             "subjectInput" : "SUBJECT",
             "messageInput" : "YOUR MESSAGE",
             "sendBtn" : "SEND MESSAGE"
-        }
+        },
+        "blog": "Blog Webpage Under Construction"
     }

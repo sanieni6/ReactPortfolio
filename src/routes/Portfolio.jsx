@@ -1,5 +1,10 @@
 import { useState } from "react";
 import { useSelector } from "react-redux";
+import videogames from "../images/videogamesRental.png";
+import bookstore from "../images/bookstore.png";
+import space from "../images/space.png";
+import artwork from "../images/artwork.png";
+import math from "../images/mat.png";
 
 const Portfolio = () => {
 
@@ -7,6 +12,14 @@ const Portfolio = () => {
     const { currentLanguage } = useSelector((store) => store.languages);
 
     const [selectedTags, setSelectedTags] = useState([]);
+
+    const images = [
+        {image: videogames, alt:"videogames"},
+        {image: bookstore, alt:"bookstore"},
+        {image: space, alt:"space"},
+        {image: artwork, alt:"artwork"},
+        {image: math, alt:"math"},
+    ];
 
     const toggleTag = (tag) => {
         if (tag === "all") {
@@ -35,7 +48,7 @@ const Portfolio = () => {
             return (
                 <div key={index} className={`projects-transition w-4/5 md:w-1/4 flex flex-col gap-3 relative justify-between items-center border ${darkMode? 'border-lightSecond':'border-darkSecond'} py-4 px-4 rounded`}>
                     <div className="w-full h-max flex flex-col gap-3">
-                    <img src={project.image} alt={project.name} className="w-full h-44"/>
+                    <img src={images[index].image} alt={images[index].alt} className="w-full h-44"/>
                     <div>
                     <p className={`${darkMode? 'text-lightText':'text-darkText'} text-2xl`}>{project.title}</p>
                     <p className={`${darkMode? 'text-lightText':'text-darkText'} text-left`}>{project.Description}</p>
