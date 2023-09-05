@@ -32,7 +32,7 @@ const Home = () => {
           };
         }, []);
         return (
-        <div className={`w-full flex flex-col items-center md:items-stretch md:flex-row justify-center gap-7 my-6 px-7`}>
+        <div className={`w-full flex flex-col items-center md:items-stretch md:flex-row justify-center gap-7 my-6 px-7 md:px-24`}>
             {Object.keys(currentLanguage.home.carusel).map((key, index) => (
                 <div key={key} className= {`border-solid border ${darkMode? 'border-lightSecond':'border-darkSecond'} p-2 w-3/6 md:w-1/6 rounded-tr-lg md:flex-grow fade-in ${visible ? 'active' : ''} ` }  style={{ transitionDelay: `${index * 0.1}s` }}>
                     <h3 className={`${darkMode? 'text-lightText':'text-darkText'} text-2xl mb-2`}>{currentLanguage.home.carusel[key].amount}</h3>
